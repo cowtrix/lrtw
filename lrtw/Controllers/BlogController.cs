@@ -19,10 +19,6 @@ namespace lrtw.Controllers
 		public IActionResult ViewBlog(string id)
 		{
 			var blog = Program.AllBlogs.SingleOrDefault(b => b.Slug == id);
-			if(blog == null)
-			{
-				return NotFound();
-			}
 			return View(blog);
 		}
 	}

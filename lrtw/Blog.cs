@@ -6,6 +6,15 @@ using System.Text.RegularExpressions;
 
 namespace lrtw
 {
+	public static class StringExtensions
+	{
+		public static int CountWords(this string s)
+		{
+			MatchCollection collection = Regex.Matches(s, @"[\S]+");
+			return collection.Count;
+		}
+	}
+
 	public class Blog
 	{
 		public Blog(string filePath)
@@ -17,11 +26,15 @@ namespace lrtw
 				).Select(m => m.Groups[1].Value)
 				.ToArray();
 			ImagePath = $"../img/{Slug}.png";
-			if(!File.Exists(Path.Join($".\\wwwroot\\{ImagePath.Substring(2).Replace("/", "\\")}")))
+			Content = File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l)).ToList();
+			WordCount = string.Join(" ", Content).CountWords();
+			if (!File.Exists(Path.Join($".\\wwwroot\\{ImagePath.Substring(2).Replace("/", "\\")}")))
 			{
 				ImagePath = null;
 			}
 		}
+
+
 
 		public string FilePath { get; }
 		public string Title => Path.GetFileNameWithoutExtension(FilePath);
@@ -30,7 +43,8 @@ namespace lrtw
 		public FileInfo FileInfo => new FileInfo(FilePath);
 		public DateTime LastEditedUTC => FileInfo.LastWriteTimeUtc;
 		public DateTime TimeCreatedUTC => FileInfo.CreationTimeUtc;
-		public IEnumerable<string> Content => File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l));
-		public string[] Tags;
+		public IEnumerable<string> Content { get; }
+		public string[] Tags { get; }
+		public int WordCount { get; }
 	}
 }

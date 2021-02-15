@@ -1,0 +1,19 @@
+﻿@model Blog
+
+<div class="card-header">
+	<h3>@Model.Title</h3>
+	<div class="row justify-content-end">
+		<small class="text-white-50 col-auto">@(TimeSpan.FromSeconds(Model.WordCount/300).TotalMinutes) min. read</small>
+		<small class="text-white-50 col-auto">Submitted @Model.TimeCreatedUTC.ToShortDateString()</small>
+		@if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
+		{
+			<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
+		}
+		<small class="text-white-50 col-auto">
+			@foreach (var tag in Model.Tags)
+			{
+				<a href="~/?tag=@tag">#@tag</a>
+			}
+		</small>
+	</div>
+</div>

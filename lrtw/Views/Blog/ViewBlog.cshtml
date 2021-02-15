@@ -1,11 +1,10 @@
-﻿@{
-	ViewData["Title"] = "View";
+﻿@model Blog
+@{
+	ViewData["Title"] = Model.Title;
 }
 
-@model Blog
-
-
-<div class="container">
+@if (Model != null)
+{
 	<div class="card text-white bg-dark">
 		@if (!string.IsNullOrEmpty(Model.ImagePath))
 		{
@@ -13,24 +12,7 @@
 				<img class="blog-img" src="@Model.ImagePath" alt="Blog header image">
 			</div>
 		}
-		<div class="card-header">
-			<h3>@Model.Title</h3>
-			<div class="row justify-content-end">
-				<small class="text-white-50 col-auto">Submitted @Model.TimeCreatedUTC.ToShortDateString()</small>
-				@{
-					if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
-					{
-						<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
-					}
-					<small class="text-white-50 col-auto">
-						@foreach (var tag in Model.Tags)
-						{
-							<a href="~/?tag=@tag">#@tag</a>
-						}
-					</small>
-				}
-			</div>
-		</div>
+		<partial name="../BlogHeaderPartial" />
 		<div class="card-body">
 			@foreach (var prev in Model.Content.Skip(1))
 			{
@@ -38,4 +20,10 @@
 			}
 		</div>
 	</div>
-</div>
+}
+else
+{
+	<div class="alert alert-secondary" role="alert">
+		Oops, there's nothing here! <a href="~/">Go Back.</a>
+	</div>
+}

@@ -1,48 +1,39 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "home";
+	bool anyDrawn = false;
 }
 
 @model IEnumerable<lrtw.Blog>
 
-<div class="container">
-	@foreach (lrtw.Blog blog in Model)
-	{
-		<div class="card text-white bg-dark">
-			@if (!string.IsNullOrEmpty(blog.ImagePath))
+@foreach (lrtw.Blog blog in Model)
+{
+	anyDrawn = true;
+	<div class="card text-white bg-dark">
+		@if (!string.IsNullOrEmpty(blog.ImagePath))
+		{
+			<div class="card-img-top blog-img-container blog-img-container-sm">
+				<img class="blog-img" src="@blog.ImagePath" alt="Blog header image">
+			</div>
+		}
+		<partial name="../BlogHeaderPartial" model="blog" />
+		<div class="card-body">
+			@foreach (var prev in blog.Content.Skip(1).Take(2))
 			{
-				<div class="card-img-top blog-img-container blog-img-container-sm">
-					<img class="blog-img" src="@blog.ImagePath" alt="Blog header image">
-				</div>
+				@Html.Raw(Markdig.Markdown.ToHtml(prev));
 			}
-			<div class="card-header">
-				<h3>@blog.Title</h3>
-				<div class="row justify-content-end">
-					<small class="text-white-50 col-auto">Submitted @blog.TimeCreatedUTC.ToShortDateString()</small>
-					@{
-						if (blog.LastEditedUTC.Date > blog.TimeCreatedUTC.Date)
-						{
-							<small class="text-white-50 col-auto">Last Edited @blog.TimeCreatedUTC.ToShortDateString()</small>
-						}
-						<small class="text-white-50 col-auto">
-							@foreach (var tag in blog.Tags)
-							{
-								<a href="~/?tag=@tag">#@tag</a>
-							}
-						</small>
-					}
-				</div>
-			</div>
-			<div class="card-body">
-				@foreach (var prev in blog.Content.Skip(1).Take(2))
-				{
-					@Html.Raw(Markdig.Markdown.ToHtml(prev));
-				}
-			</div>
-			<a href="~/blog/@blog.Slug">
-				<div class="card-footer text-center btn-secondary">
-					View
-				</div>
-			</a>
 		</div>
-	}
-</div>
+		<a href="~/blog/@blog.Slug">
+			<div class="card-footer text-center btn-secondary">
+				Read More...
+			</div>
+		</a>
+	</div>
+	<hr />
+}
+
+@if (!anyDrawn)
+{
+	<div class="alert alert-secondary" role="alert">
+		Oops, there's nothing here! <a href="~/">Go Back.</a>
+	</div>
+}
