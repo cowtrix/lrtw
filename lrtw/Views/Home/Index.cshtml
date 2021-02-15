@@ -1,6 +1,10 @@
 ﻿@{
 	ViewData["Title"] = "home";
 	bool anyDrawn = false;
+	int page = (int)ViewData[lrtw.Controllers.HomeController.PAGE_KEY];
+	int chunkSize = lrtw.Controllers.HomeController.PAGE_BLOG_COUNT;
+	int resultSize = (int)ViewData[lrtw.Controllers.HomeController.RESULT_SIZE];
+	int maxPages = (int)Math.Ceiling(resultSize / (float)chunkSize) + 1;
 }
 
 @model IEnumerable<lrtw.Blog>
@@ -11,9 +15,11 @@
 	<div class="card text-white bg-dark">
 		@if (!string.IsNullOrEmpty(blog.ImagePath))
 		{
-			<div class="card-img-top blog-img-container blog-img-container-sm">
-				<img class="blog-img" src="@blog.ImagePath" alt="Blog header image">
-			</div>
+			<a href="~/blog/@blog.Slug">
+				<div class="card-img-top blog-img-container blog-img-container-sm">
+					<img class="blog-img" src="@blog.ImagePath" alt="Blog header image">
+				</div>
+			</a>
 		}
 		<partial name="../BlogHeaderPartial" model="blog" />
 		<div class="card-body">
@@ -31,9 +37,43 @@
 	<hr />
 }
 
-@if (!anyDrawn)
-{
-	<div class="alert alert-secondary" role="alert">
-		Oops, there's nothing here! <a href="~/">Go Back.</a>
-	</div>
+@{
+	if (!anyDrawn)
+	{
+		<div class="alert alert-secondary" role="alert">
+			Oops, there's nothing here! <a href="~/">Go Back.</a>
+		</div>
+	}
+	else
+	{
+		<div class="container">
+			<small class="row text-white justify-content-center">Viewing @((page - 1) * chunkSize) - @(Math.Min((page - 1) * chunkSize + chunkSize, resultSize)) results of @resultSize</small>
+			<nav class="row justify-content-center" aria-label="Pages">
+				<ul class="pagination">
+					<li class="page-item @(page == 1 ? "disabled" : "")">
+						<a class="page-link" href="?page=@(page-1)" tabindex="-1">Previous</a>
+					</li>
+
+					@{
+						for (var i = 1; i < maxPages; i++)
+						{
+							<li class="page-item @(i == page ? "active" : "")">
+								<a class="page-link" href="?page=@i">
+									@i
+									@if (i == page)
+									{
+										<span class="sr-only">(current)</span>
+									}
+								</a>
+							</li>
+						}
+					}
+
+					<li class="page-item">
+						<a class="page-link @(page >= maxPages-1 ? "disabled" : "")" href="?page=@(page+1)">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	}
 }

@@ -19,6 +19,12 @@
 				@Html.Raw(Markdig.Markdown.ToHtml(prev));
 			}
 		</div>
+
+		<div class="card-footer text-center row">			
+			<a class="col" href="~/">Return Home</a>
+			<a class="col-auto" href="~/Blog/@(Model.Title).md">Raw</a>
+		</div>
+
 	</div>
 }
 else

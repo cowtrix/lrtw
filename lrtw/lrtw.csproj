@@ -5,26 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Blog\img\anewsite.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
     <PackageReference Include="Markdig.Signed" Version="0.23.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Blog\A Second Post.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Blog\A New Site.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Blog\img\" />
+    <None Include="wwwroot\Blog\A New Site.md" />
+    <None Include="wwwroot\Blog\A Second Post.md" />
+    <None Include="wwwroot\Blog\img\anewsite.png" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,11 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-	color: #0366d6;
+	color: #5faaff;
+}
+
+a:hover {
+	color: #aad2ff;
 }
 
 .btn-primary {
@@ -91,19 +95,19 @@ body {
 	max-height: 128px;
 }
 
-hr{
-	height:1em;
+hr {
+	height: 1em;
 }
 
-hr:after {
-	content: "-";
-	display: inline-block;
-	position: relative;
-	top: -0.7em;
-	font-size: 1.5em;
-	padding: 0 0.25em;
-}
+	hr:after {
+		content: "-";
+		display: inline-block;
+		position: relative;
+		top: -0.7em;
+		font-size: 1.5em;
+		padding: 0 0.25em;
+	}
 
-.container{
-	margin-top:1em;
+.container {
+	margin-top: 1em;
 }

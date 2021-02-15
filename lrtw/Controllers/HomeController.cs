@@ -15,26 +15,24 @@ namespace lrtw.Controllers
 		private readonly ILogger<HomeController> _logger;
 		
 		public const int PAGE_BLOG_COUNT = 5;
+		public const string PAGE_KEY = "page";
+		public const string RESULT_SIZE = "resultsize";
 
 		public HomeController(ILogger<HomeController> logger)
 		{
-			_logger = logger;
-			
+			_logger = logger;			
 		}
 
-		public IActionResult Index([FromQuery] int page = 0, [FromQuery] string tag = null)
+		public IActionResult Index([FromQuery] int page = 1, [FromQuery] string tag = null)
 		{
-			var blogs = Program.AllBlogs
-					.Where(b => string.IsNullOrEmpty(tag) || b.Tags.Contains(tag))
-					.Skip(page * PAGE_BLOG_COUNT)
+			var all = Program.AllBlogs
+					.Where(b => string.IsNullOrEmpty(tag) || b.Tags.Contains(tag));
+			var paginated = all.Skip((page - 1) * PAGE_BLOG_COUNT)
 					.Take(PAGE_BLOG_COUNT)
 					.ToList();
-			return View(blogs);
-		}
-
-		public IActionResult Privacy()
-		{
-			return View();
+			ViewData[PAGE_KEY] = page;
+			ViewData[RESULT_SIZE] = all.Count();
+			return View(paginated);
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

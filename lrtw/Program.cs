@@ -17,31 +17,34 @@ namespace lrtw
 		public static List<Blog> AllBlogs;
 		public const string GIT_BRANCH = "main";
 		public const string GIT_REMOTE = "origin";
-		public const string BLOG_PATH = @".\Blog";
+		public const string BLOG_PATH = @".\wwwroot\Blog";
 
 		public static void Main(string[] args)
 		{
-			UpdateAndLoad();
+			new Task(async () =>
+			{
+				UpdateAndLoadBlogs();
+				await Task.Delay(TimeSpan.FromMinutes(60));
+			}).Start();
+			
 
 			CreateHostBuilder(args).Build().Run();
 		}
 
-		public static void UpdateAndLoad()
+		public static void UpdateAndLoadBlogs()
 		{
 			var path = Path.GetFullPath(BLOG_PATH);
 			if (!Directory.Exists(path))
 			{
 				throw new DirectoryNotFoundException($"{path} folder does not exist");
 			}
-
 			try
 			{
 				using (var repo = new Repository(path))
 				{
 					var remote = repo.Network.Remotes[GIT_REMOTE];
-					var refSpecs = remote.FetchRefSpecs.Select(x => x.Specification);
-					Commands.Fetch(repo, remote.Name, refSpecs, null, "");
-
+					var refSpecs = remote?.FetchRefSpecs.Select(x => x.Specification);
+					Commands.Fetch(repo, remote?.Name, refSpecs, null, "");
 					var branch = repo.Branches[GIT_BRANCH];
 					if (branch == null)
 					{

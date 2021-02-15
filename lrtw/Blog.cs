@@ -25,7 +25,7 @@ namespace lrtw
 					File.ReadLines(FilePath).First()
 				).Select(m => m.Groups[1].Value)
 				.ToArray();
-			ImagePath = $"../img/{Slug}.png";
+			ImagePath = $"../Blog/img/{Slug}.png";
 			Content = File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l)).ToList();
 			WordCount = string.Join(" ", Content).CountWords();
 			if (!File.Exists(Path.Join($".\\wwwroot\\{ImagePath.Substring(2).Replace("/", "\\")}")))
