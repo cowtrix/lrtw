@@ -14,7 +14,7 @@ namespace lrtw
 {
 	public class Program
 	{
-		public static List<Blog> AllBlogs;
+		public static IEnumerable<Blog> AllBlogs;
 		public const string GIT_BRANCH = "main";
 		public const string GIT_REMOTE = "origin";
 		public const string BLOG_PATH = @".\wwwroot\Blog";
@@ -60,8 +60,7 @@ namespace lrtw
 
 			AllBlogs = Directory.GetFiles(path, "*.md")
 				.Select(p => new Blog(p))
-				.OrderByDescending(b => b.TimeCreatedUTC)
-				.ToList();			
+				.OrderByDescending(b => b.TimeCreatedUTC);			
 		}
 
 		public static IHostBuilder CreateHostBuilder(string[] args) =>
