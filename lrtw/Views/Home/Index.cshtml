@@ -13,11 +13,11 @@
 {
 	anyDrawn = true;
 	<div class="card text-white bg-dark">
-		@if (!string.IsNullOrEmpty(blog.ImagePath))
+		@if (!string.IsNullOrEmpty(blog.ThumbnailPath))
 		{
 			<a href="~/blog/@blog.Slug">
 				<div class="card-img-top blog-img-container blog-img-container-sm">
-					<img class="blog-img" src="@blog.ImagePath" alt="Blog header image">
+					<img class="blog-img" src="@blog.ThumbnailPath" alt="Blog header image">
 				</div>
 			</a>
 		}

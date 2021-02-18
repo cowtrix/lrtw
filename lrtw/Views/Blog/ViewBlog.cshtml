@@ -6,10 +6,10 @@
 @if (Model != null)
 {
 	<div class="card text-white bg-dark">
-		@if (!string.IsNullOrEmpty(Model.ImagePath))
+		@if (!string.IsNullOrEmpty(Model.ThumbnailPath))
 		{
 			<div class="card-img-top blog-img-container">
-				<img class="blog-img" src="@Model.ImagePath" alt="Blog header image">
+				<img class="blog-img" src="@Model.ThumbnailPath" alt="Blog header image">
 			</div>
 		}
 		<partial name="../BlogHeaderPartial" />

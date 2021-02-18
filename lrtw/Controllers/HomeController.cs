@@ -35,6 +35,12 @@ namespace lrtw.Controllers
 			return View(paginated);
 		}
 
+		[HttpGet("{id}")]
+		public IActionResult Page([FromRoute]string id)
+		{
+			return View(Program.AllPages.SingleOrDefault(p => string.Equals(id, p.Title, StringComparison.OrdinalIgnoreCase)));
+		}
+
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{

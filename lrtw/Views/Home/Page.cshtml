@@ -1,0 +1,15 @@
+﻿@model Page
+
+<div class="text-white">
+	<h1>@Model.Title</h1>
+	<small class="text-white-50 col-auto">Created @Model.TimeCreatedUTC.ToShortDateString()</small>
+	@if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
+	{
+		<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
+	}
+
+	@foreach (var md in Model.Content)
+	{
+		@Html.Raw(Markdig.Markdown.ToHtml(md));
+	}
+</div>

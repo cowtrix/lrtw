@@ -8,6 +8,32 @@
 	<link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark box-shadow mb-3">
+			<div class="container nav-container">
+				<a asp-area="" asp-controller="Home" asp-action="Index">
+					<div class="navbar-brand text-white">
+						<h1>lrtw</h1>
+					</div>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+					<ul class="navbar-nav flex-grow-1">
+						@foreach (var p in Program.AllPages)
+						{
+							<li class="nav-item">
+								<a class="nav-link" href="~/@p.Slug">@p.Title</a>
+							</li>
+						}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
 	<div class="container">
 		<main role="main" class="pb-3">
 			@RenderBody()
