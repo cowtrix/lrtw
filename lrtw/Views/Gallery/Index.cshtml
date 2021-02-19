@@ -3,10 +3,10 @@
 @foreach (var gallery in Model)
 {
 	<div class="card text-white bg-dark">
-		<div class="card-img-top blog-img-container blog-img-container-sm row">
+		<div class="card-img-top blog-img-container blog-img-container-sm gallery-container row">
 			@foreach (var t in gallery.Files.Take(4))
 			{
-				<img class="gallery-thumb col-auto w-25 h-100" src="gallery/@t.URL" alt="Gallery thumbnail">
+				<img class="gallery-thumb w-25 h-100" src="gallery/@t.URL" alt="Gallery thumbnail">
 			}
 		</div>
 		<div class="card-header">

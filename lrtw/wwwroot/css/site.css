@@ -139,3 +139,7 @@ pre {
 .contains-task-list {
 	list-style: none;
 }
+
+.gallery-container {
+	margin-left: 0;
+}
