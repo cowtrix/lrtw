@@ -13,3 +13,7 @@ Email me recipes for good vegetarian food.
 If you're quoting me then something has gone terribly wrong.
 Okay, but why not go and read someone smarter?
 Everyone is equal.
+Flow states are pretty cool.
+Be a friend to yourself.
+I miss South America.
+Sean Fact: I do fire spinning

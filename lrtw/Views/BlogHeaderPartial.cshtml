@@ -7,7 +7,7 @@
 		<small class="text-white-50 col-auto">Submitted @Model.TimeCreatedUTC.ToShortDateString()</small>
 		@if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
 		{
-			<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
+			<small class="text-white-50 col-auto">Last Edited @Model.LastEditedUTC.ToShortDateString()</small>
 		}
 		<small class="text-white-50 col-auto">
 			@foreach (var tag in Model.Tags)
