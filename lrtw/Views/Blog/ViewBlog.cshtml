@@ -1,6 +1,6 @@
 ﻿@model Blog
 @{
-	ViewData["Title"] = Model.Title;
+	ViewData["Title"] = Model?.Title;
 }
 
 @if (Model != null)
@@ -14,10 +14,7 @@
 		}
 		<partial name="../BlogHeaderPartial" />
 		<div class="card-body">
-			@foreach (var prev in Model.Content.Skip(1))
-			{
-				@Html.Raw(Markdig.Markdown.ToHtml(prev));
-			}
+			@Html.Raw(StringExtensions.ToHtml(Model.Content))
 		</div>
 
 		<div class="card-footer text-center row">			

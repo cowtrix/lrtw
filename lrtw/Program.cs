@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using LibGit2Sharp;
-using LibGit2Sharp.Handlers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +22,12 @@ namespace lrtw
 				.Select(p => new Page(p))
 				.OrderBy(b => b.Title);
 
+		private static IList<string> AllThoughts
+			= File.ReadAllLines(@".\Thoughts.md")
+			.Where(l => !string.IsNullOrEmpty(l))
+			.Select(l => l.Trim())
+			.ToList();
+
 		public const string GIT_BRANCH = "main";
 		public const string GIT_REMOTE = "origin";
 
@@ -31,37 +35,7 @@ namespace lrtw
 
 		public static void Main(string[] args)
 		{
-			new Task(async () =>
-			{
-				while (true)
-				{
-					try
-					{
-						UpdateAndLoadBlogs();
-					}
-					catch (Exception e)
-					{
-						Console.Write($"Error updating repository: {e.Message}");
-					}
-					await Task.Delay(TimeSpan.FromMinutes(60));
-				}
-
-			}).Start();
 			CreateHostBuilder(args).Build().Run();
-		}
-
-		public static void UpdateAndLoadBlogs()
-		{
-			using var repo = new Repository(BLOG_PATH);
-			var remote = repo.Network.Remotes[GIT_REMOTE];
-			var refSpecs = remote?.FetchRefSpecs.Select(x => x.Specification);
-			Commands.Fetch(repo, remote?.Name, refSpecs, null, "");
-			var branch = repo.Branches[GIT_BRANCH];
-			if (branch == null)
-			{
-				throw new Exception($"Branch {GIT_BRANCH} did not exist");
-			}
-			var currentBranch = Commands.Checkout(repo, branch); ;
 		}
 
 		public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -70,5 +44,12 @@ namespace lrtw
 				{
 					webBuilder.UseStartup<Startup>();
 				});
+
+		public static string GetRandomThought()
+		{
+			var rnd = new Random();
+			var index = rnd.Next(0, AllThoughts.Count());
+			return AllThoughts[index];
+		}
 	}
 }

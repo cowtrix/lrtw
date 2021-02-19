@@ -13,7 +13,7 @@ namespace lrtw
 					File.ReadLines(FilePath).First()
 				).Select(m => m.Groups[1].Value)
 				.ToArray();
-			ThumbnailPath = $"../Blog/img/{Slug}.png";			
+			ThumbnailPath = $"../Blog/img/{Title}.png";			
 			WordCount = string.Join(" ", Content).CountWords();
 			if (!File.Exists(Path.Join($".\\wwwroot\\{ThumbnailPath.Substring(2).Replace("/", "\\")}")))
 			{

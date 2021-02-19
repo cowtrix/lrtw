@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -13,14 +14,32 @@ namespace lrtw
 		// Properties
 		public FileInfo FileInfo => new FileInfo(FilePath);
 		public DateTime LastEditedUTC => FileInfo.LastWriteTimeUtc;
-		public DateTime TimeCreatedUTC => FileInfo.CreationTimeUtc;
+		public DateTime TimeCreatedUTC { get; }
 		public string Title => Path.GetFileNameWithoutExtension(FilePath);
-		public string Slug => Uri.EscapeUriString(Title.ToLowerInvariant().Replace(" ", ""));
-		public IEnumerable<string> Content => File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l));
+		public string Slug => Uri.EscapeUriString(Title.ToLowerInvariant()
+			.Replace(" ", "")
+			.Replace("#", "-")
+			.Replace("?", ""));
+		public IEnumerable<string> Lines => File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l));
+		public string Content => string.Join("\n\n", Lines);
 
 		public Page(string filePath)
 		{
 			FilePath = filePath;
+			// Look on first line for timestamp override
+			var timestamp = Lines.FirstOrDefault()
+				?.Split(" ")
+				.FirstOrDefault();
+			if(timestamp != null && 
+				DateTime.TryParseExact(timestamp, "yyyy-MM-dd", 
+				CultureInfo.InvariantCulture, DateTimeStyles.None, out var ts))
+			{
+				TimeCreatedUTC = ts;
+			}
+			else
+			{
+				TimeCreatedUTC = FileInfo.CreationTimeUtc;
+			}
 		}
 	}
 }

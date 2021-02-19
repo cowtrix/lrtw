@@ -23,9 +23,9 @@
 		}
 		<partial name="../BlogHeaderPartial" model="blog" />
 		<div class="card-body">
-			@foreach (var prev in blog.Content.Skip(1).Take(2))
+			@foreach (var prev in blog.Lines.Skip(1).Take(2))
 			{
-				@Html.Raw(Markdig.Markdown.ToHtml(prev));
+				@Html.Raw(StringExtensions.ToHtml(prev));
 			}
 		</div>
 		<a href="~/blog/@blog.Slug">

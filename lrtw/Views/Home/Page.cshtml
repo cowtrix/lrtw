@@ -8,8 +8,5 @@
 		<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
 	}
 
-	@foreach (var md in Model.Content)
-	{
-		@Html.Raw(Markdig.Markdown.ToHtml(md));
-	}
+	@Html.Raw(StringExtensions.ToHtml(Model.Content))
 </div>

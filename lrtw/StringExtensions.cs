@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿using Markdig;
+using Markdig.SyntaxHighlighting;
+using System.Text.RegularExpressions;
 
 namespace lrtw
 {
@@ -8,6 +10,15 @@ namespace lrtw
 		{
 			MatchCollection collection = Regex.Matches(s, @"[\S]+");
 			return collection.Count;
+		}
+
+		public static string ToHtml(string s)
+		{
+			var pipeline = new MarkdownPipelineBuilder()
+				.UseAdvancedExtensions()
+				.UseSyntaxHighlighting()
+				.Build();
+			return Markdown.ToHtml(s, pipeline);
 		}
 	}
 }

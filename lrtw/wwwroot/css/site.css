@@ -12,9 +12,9 @@ a {
 	color: #5faaff;
 }
 
-a:hover {
-	color: #aad2ff;
-}
+	a:hover {
+		color: #aad2ff;
+	}
 
 .btn-primary {
 	color: #fff;
@@ -99,19 +99,6 @@ hr {
 	height: 1em;
 }
 
-	hr:after {
-		content: "-";
-		display: inline-block;
-		position: relative;
-		top: -0.7em;
-		font-size: 1.5em;
-		padding: 0 0.25em;
-	}
-
-.container {
-	margin-top: 1em;
-}
-
 img {
 	display: block;
 	background-color: white;
@@ -120,6 +107,31 @@ img {
 	margin-right: auto;
 }
 
-.nav-container{
-	margin-top:0;
+.nav-container {
+	margin-top: 0;
+}
+
+iframe {
+	max-width: 100% !important;
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 860px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 860px;
+	}
+}
+
+pre {
+	display: block;
+	background-color: #232e3e;
+	color: white;
+	overflow: auto;
+	line-height: .75em;
+	padding: 0px 10px 10px 10px;
 }
