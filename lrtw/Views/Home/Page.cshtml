@@ -1,12 +1,21 @@
 ﻿@model Page
 
-<div class="text-white">
-	<h1>@Model.Title</h1>
-	<small class="text-white-50 col-auto">Created @Model.TimeCreatedUTC.ToShortDateString()</small>
-	@if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
-	{
-		<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
-	}
+@if (Model == null)
+{
+	<div class="alert alert-secondary" role="alert">
+		Oops, there's nothing here! <a href="~/">Go Back.</a>
+	</div>
+}
+else
+{
+	<div class="text-white">
+		<h1>@Model.Title</h1>
+		<small class="text-white-50 col-auto">Created @Model.TimeCreatedUTC.ToShortDateString()</small>
+		@if (Model.LastEditedUTC.Date > Model.TimeCreatedUTC.Date)
+		{
+			<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
+		}
 
-	@Html.Raw(StringExtensions.ToHtml(Model.Content))
-</div>
+		@Html.Raw(StringExtensions.ToHtml(Model.Content))
+	</div>
+}
