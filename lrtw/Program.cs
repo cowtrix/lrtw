@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,11 @@ namespace lrtw
 				.Select(p => new Page(p))
 				.OrderBy(b => b.Title);
 
+		public static IEnumerable<Gallery> AllGalleries =>
+			Directory.GetDirectories(Path.GetFullPath(@".\wwwroot\gallery"))
+				.Select(p => new Gallery(p))
+				.OrderBy(b => b.GalleryName);
+
 		private static IList<string> AllThoughts
 			= File.ReadAllLines(@".\Thoughts.md")
 			.Where(l => !string.IsNullOrEmpty(l))
@@ -31,7 +37,7 @@ namespace lrtw
 		public const string GIT_BRANCH = "main";
 		public const string GIT_REMOTE = "origin";
 
-		public const string BLOG_PATH = @".\wwwroot\Blog";
+		public const string BLOG_PATH = @".\wwwroot\blog";
 
 		public static void Main(string[] args)
 		{

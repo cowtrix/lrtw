@@ -1,5 +1,6 @@
 ﻿using Markdig;
 using Markdig.SyntaxHighlighting;
+using System;
 using System.Text.RegularExpressions;
 
 namespace lrtw
@@ -19,6 +20,14 @@ namespace lrtw
 				.UseSyntaxHighlighting()
 				.Build();
 			return Markdown.ToHtml(s, pipeline);
+		}
+
+		public static string ToSlug(this string s)
+		{
+			return Uri.EscapeUriString(s.ToLowerInvariant()
+				.Replace(" ", "")
+				.Replace("#", "-")
+				.Replace("?", ""));
 		}
 	}
 }

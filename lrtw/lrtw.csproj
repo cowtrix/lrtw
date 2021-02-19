@@ -19,4 +19,13 @@
     <ProjectReference Include="..\MarkdigSyntax\MarkdigSyntax.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Pages\About.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Thoughts.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,6 @@
-﻿Sean Finnegan is a high-functioning sack of sapient flesh, consisting mostly of complex proteins and water. He was born in 1992 – on time and under budget – in Sydney, Australia, and currently resides in Bristol, UK.
+﻿![My Face.](img/face.jpg)
+
+Sean Finnegan is a high-functioning sack of sapient flesh, consisting mostly of complex proteins and water. He was born in 1992 – on time and under budget – in Sydney, Australia, and currently resides in Bristol, UK.
 
 Sean enjoys programming, art, and politics, and trying to find ways to ramble about all three of those things whenever he can. He is almost always incorrect, but that never stops him having an opinion.
 

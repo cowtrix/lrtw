@@ -16,12 +16,9 @@ namespace lrtw
 		public DateTime LastEditedUTC => FileInfo.LastWriteTimeUtc;
 		public DateTime TimeCreatedUTC { get; }
 		public string Title => Path.GetFileNameWithoutExtension(FilePath);
-		public string Slug => Uri.EscapeUriString(Title.ToLowerInvariant()
-			.Replace(" ", "")
-			.Replace("#", "-")
-			.Replace("?", ""));
+		public string Slug => Title.ToSlug();
 		public IEnumerable<string> Lines => File.ReadLines(FilePath).Where(l => !string.IsNullOrEmpty(l));
-		public string Content => string.Join("\n\n", Lines);
+		public virtual string Content => string.Join("\n\n", Lines);
 
 		public Page(string filePath)
 		{

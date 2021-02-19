@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Blog>
+
+@{
+	var allTags = Model.SelectMany(m => m.Tags).ToList();
+	var tagDict = allTags.Distinct().ToDictionary(x => x, x => allTags.Count(y => x == y));
+	var max = tagDict.Values.Max();
+	var minSize = 8;
+	var maxSize = 24;
+}
+@foreach (var tag in tagDict)
+{
+	var fontSize = (int)Math.Round(minSize + (tag.Value / (float)max) * maxSize);
+	<a href="~/?tag=@tag.Key"><p style="font-size:@(fontSize)px">#@tag.Key</p></a>
+}

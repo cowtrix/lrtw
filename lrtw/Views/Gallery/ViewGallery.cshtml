@@ -1,0 +1,79 @@
+﻿@model lrtw.Controllers.GalleryViewModel
+
+@{
+	const int pagePeek = 5;
+	const int chunkSize = 10;
+	var results = Model.Gallery.Files
+		.Where(f => Model.Filter(f));
+	var resultSize = results.Count();
+	int maxPages = (int)Math.Ceiling(resultSize / (float)chunkSize) + 1;
+}
+
+@if (Model.Gallery == null)
+{
+	<div class="alert alert-secondary" role="alert">
+		Oops, there's nothing here! <a href="~/">Go Back.</a>
+	</div>
+}
+else
+{
+	<div class="text-white">
+		@Html.Raw(StringExtensions.ToHtml(Model.Gallery.Content))
+	</div>
+
+	<div>
+		@foreach (var year in Model.Gallery.Files.Select(f => f.CreationDate.Year).Distinct())
+		{
+			<a href="?year=@year">#@year</a>
+		}
+	</div>
+
+	var lastDate = DateTime.MinValue.Date;
+	foreach (var file in results
+		.Skip((Model.Page - 1) * chunkSize)
+		.Take(chunkSize))
+	{
+		if (file.CreationDate.Date > lastDate)
+		{
+			lastDate = file.CreationDate.Date;
+			<small class="text-white-50">@lastDate.ToShortDateString()</small>
+		}
+		@Html.Raw(file.Content)
+	}
+
+	// Pagination
+	<div class="container">
+		<small class="row text-white justify-content-center">Viewing @((Model.Page - 1) * chunkSize) - @(Math.Min((Model.Page - 1) * chunkSize + chunkSize, resultSize)) results of @resultSize</small>
+		<nav class="row justify-content-center" aria-label="Pages">
+			<ul class="pagination">
+				<li class="page-item @(Model.Page == 1 ? "disabled" : "")">
+					<a class="page-link" href="?page=@(Model.Page-1)" tabindex="-1">Previous</a>
+				</li>
+
+				@{
+					for (var i = 1; i < maxPages; i++)
+					{
+						if (i > 1 && i < Model.Page - pagePeek)
+							continue;
+						if (i < maxPages - 1 && i > Model.Page + pagePeek)
+							continue;
+
+						<li class="page-item @(i == Model.Page ? "active" : "")">
+							<a class="page-link" href="?page=@i">
+								@i
+								@if (i == Model.Page)
+								{
+									<span class="sr-only">(current)</span>
+								}
+							</a>
+						</li>
+					}
+				}
+
+				<li class="page-item">
+					<a class="page-link @(Model.Page >= maxPages-1 ? "disabled" : "")" href="?page=@(Model.Page+1)">Next</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+}
