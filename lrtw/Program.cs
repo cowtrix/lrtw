@@ -26,7 +26,7 @@ namespace lrtw
 		public static IEnumerable<Gallery> AllGalleries =>
 			Directory.GetDirectories(Path.GetFullPath(@".\wwwroot\gallery"))
 				.Select(p => new Gallery(p))
-				.OrderBy(b => b.GalleryName);
+				.OrderByDescending(b => b.GalleryName);
 
 		private static IList<string> AllThoughts
 			= File.ReadAllLines(@".\Thoughts.md")

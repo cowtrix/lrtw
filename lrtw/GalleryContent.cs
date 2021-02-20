@@ -25,10 +25,6 @@ namespace lrtw
 				{
 					CreationDate = ts;
 				}
-				else
-				{
-					throw new Exception();
-				}
 			}
 			else
 			{

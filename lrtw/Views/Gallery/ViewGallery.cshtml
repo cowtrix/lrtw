@@ -22,7 +22,7 @@ else
 	</div>
 
 	<div>
-		@foreach (var year in Model.Gallery.Files.Select(f => f.CreationDate.Year).Distinct())
+		@foreach (var year in Model.Gallery.Files.Select(f => f.CreationDate.Year).Distinct().Where(y => y > 1))
 		{
 			<a href="?year=@year">#@year</a>
 		}

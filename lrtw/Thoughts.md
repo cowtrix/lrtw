@@ -1,5 +1,9 @@
 ﻿I hope you're having a lovely day!
-Time for a cup of tea I think.
+Time for a cup of tea, I think.
+Time for a cup of tea, I think. Don't forget a biscuit!
+Time for a cup of water, I think.
+Time for a coffee, I think.
+Are you staying hydrated? Drink more water!
 All that we are is the result of what we have thought.
 Wear your ego like a loose fitting garment.
 Injustice anywhere is a threat to justice everywhere.
@@ -17,3 +21,5 @@ Flow states are pretty cool.
 Be a friend to yourself.
 I miss South America.
 Sean Fact: I do fire spinning
+A basilisk is a word meaning a memetic hazard.
+Why is everyone I buy teeth from such a weirdo?
