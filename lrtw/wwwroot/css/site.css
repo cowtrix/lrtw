@@ -143,3 +143,29 @@ pre {
 .gallery-container {
 	margin-left: 0;
 }
+
+blockquote {
+	display: block;
+	position: relative;
+	padding: 10px 10px 1px 45px;
+	margin: 0 0 20px;
+	background-color: #00000033;
+}
+
+blockquote::before {
+	content: "\201C"; /*Unicode for Left Double Quote*/
+	/*Font*/
+	font-family: Georgia, serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #ffffff55;
+	/*Positioning*/
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+
+blockquote::after {
+	/*Reset to make sure*/
+	content: "";
+}

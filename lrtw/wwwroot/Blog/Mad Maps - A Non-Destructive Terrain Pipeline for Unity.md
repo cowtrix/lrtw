@@ -17,3 +17,6 @@ Check out some overview videos below:
 ![youtube.com](https://www.youtube.com/watch?v=kW2wycHqNnI)
 
 [Unity Asset Store](https://assetstore.unity.com/packages/tools/terrain/mad-maps-111524)
+
+[Here's the latest build](../static/2018/MadMaps_0_1_4a.unitypackage)
+
