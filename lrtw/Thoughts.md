@@ -13,7 +13,7 @@ lrtw stands for Long Range Tweed Wombat
 lrtw stands for Lizards Rule The World
 lrtw stands for Legitimate Right To Write
 lrtw stands for Leading Readers To Wrongness
-Email me recipes for good vegetarian food.
+[Email me](mailto:seandgfinnegan@protonmail.com) recipes for good vegetarian food.
 If you're quoting me then something has gone terribly wrong.
 Okay, but why not go and read someone smarter?
 Everyone is equal.
@@ -23,3 +23,5 @@ I miss South America.
 Sean Fact: I do fire spinning
 A basilisk is a word meaning a memetic hazard.
 Why is everyone I buy teeth from such a weirdo?
+I lived in a van called Babo Conquista for a year.
+I miss Spiti Valley!

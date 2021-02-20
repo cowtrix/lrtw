@@ -25,6 +25,7 @@ namespace lrtw.Controllers
 
 		public IActionResult Index([FromQuery] int page = 1, [FromQuery] string tag = null)
 		{
+			page = Math.Max(1, page);
 			var all = Program.AllBlogs
 					.Where(b => string.IsNullOrEmpty(tag) || b.Tags.Contains(tag));
 			var paginated = all.Skip((page - 1) * PAGE_BLOG_COUNT)

@@ -5,6 +5,11 @@
 	int chunkSize = lrtw.Controllers.HomeController.PAGE_BLOG_COUNT;
 	int resultSize = (int)ViewData[lrtw.Controllers.HomeController.RESULT_SIZE];
 	int maxPages = (int)Math.Ceiling(resultSize / (float)chunkSize) + 1;
+	string tag = null;
+	if (Context.Request.Query.TryGetValue("tag", out var tags))
+	{
+		tag = tags.FirstOrDefault();
+	}
 }
 
 @model IEnumerable<lrtw.Blog>
@@ -50,15 +55,15 @@
 			<small class="row text-white justify-content-center">Viewing @((page - 1) * chunkSize) - @(Math.Min((page - 1) * chunkSize + chunkSize, resultSize)) results of @resultSize</small>
 			<nav class="row justify-content-center" aria-label="Pages">
 				<ul class="pagination">
-					<li class="page-item @(page == 1 ? "disabled" : "")">
-						<a class="page-link" href="?page=@(page-1)" tabindex="-1">Previous</a>
+					<li class="page-item">
+						<a class="page-link" href="@(page > 1 ? $"?page={page-1}&tag={tag}" : "#")" tabindex="-1">Previous</a>
 					</li>
 
 					@{
 						for (var i = 1; i < maxPages; i++)
 						{
 							<li class="page-item @(i == page ? "active" : "")">
-								<a class="page-link" href="?page=@i">
+								<a class="page-link" href="?page=@i&tag=@tag">
 									@i
 									@if (i == page)
 									{
@@ -70,7 +75,7 @@
 					}
 
 					<li class="page-item">
-						<a class="page-link @(page >= maxPages-1 ? "disabled" : "")" href="?page=@(page+1)">Next</a>
+						<a class="page-link" href="@(page < maxPages - 1 ? $"?page={page+1}&tag={tag}" : "#")">Next</a>
 					</li>
 				</ul>
 			</nav>
