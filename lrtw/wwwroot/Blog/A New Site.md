@@ -1,4 +1,4 @@
-﻿#blog
+﻿2021-02-19 #blog
 
 I've been unhappy with my portfolio site for a while now, so I made a new one. A fair few years ago I bought hosting with a hosting company InMotion and just set up a  Wordpress instance, and that has served its purpose for all 300 historical visitors to this site over the past decade. But I have changed, the web has changed, and my knowledge base has grown to the point now where I want to self-manage and self-host a lot more.
 
