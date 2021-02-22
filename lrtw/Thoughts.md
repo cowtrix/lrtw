@@ -25,3 +25,8 @@ A basilisk is a word meaning a memetic hazard.
 Why is everyone I buy teeth from such a weirdo?
 I lived in a van called Babo Conquista for a year.
 I miss Spiti Valley!
+Today you, tomorrow me.
+Everything was beautiful, and nothing hurt.
+Be kind.
+If you can't be correct, at least be prolific.
+To fuck around is human; to find out is divine.
