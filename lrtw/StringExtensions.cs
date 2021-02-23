@@ -29,5 +29,14 @@ namespace lrtw
 				.Replace("#", "-")
 				.Replace("?", ""));
 		}
+
+		public static string SafeSubstring(this string s, int length)
+		{
+			if(length > s.Length)
+			{
+				return s;
+			}
+			return s.Substring(0, length);
+		}
 	}
 }

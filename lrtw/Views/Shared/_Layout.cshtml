@@ -18,12 +18,18 @@
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#000000">
+
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" />
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>[lrtw] @ViewData["Title"]</title>
-	<meta name="description" content="A personal blog."/>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="~/css/site.css" />
+	<meta name="description" content="@(ViewData["Description"] ?? 
+		"A personal blog dedicated to whatever the hell I'm up to - programming, writing, travelling, generally having a good time.")" />
+	<meta name="keywords" content="@(string.Join(", ", ViewData["Keywords"] as IEnumerable<string> ?? 
+		new[] { "blog", "Sean", "Finnegan", "writing", "programming", }))">
+	<meta name="author" content="Sean Finnegan">
 </head>
 <body>
 	<header>
