@@ -1,10 +1,8 @@
 2021-02-25 #writing #philosophy
 
-There are many abstract, mental systems that we build throughout our lives. We build systems in order to interpret our memories and sensory input into an internal simulation of "reality", our experience up to that moment. Their second function is then to run simulations of the future and predict their probability 
+There are many abstract, mental systems that we build throughout our lives. We build systems firstly in order to interpret our memories and sensory input into an internal simulation of "reality", our experience up to that moment. Secondly, we then run simulations of the future and predict their probability. These systems are abstract objects that exist within your mind that define your experience within the world.
 
-These systems are abstract objects that exist within your mind that define your experience within the world.
-
-However, at some point, your systems will come to the final part of this process of existence: selecting which predicted future you should pursue. This will involve using some form of heuristic to determine future value, and then balancing that value against probability.
+However, at some point, your systems will come to the final part of this process of existence: selecting which predicted future you should pursue. Eventually you have to answer questions like "Why should we reduce human suffering?" This will involve using some form of heuristic to determine future value, and then balancing that value against probability. 
 
 But what is this heuristic exactly? Consider the plethora of future states that lay before you, running the full gamut from your worst fears to your wildest dreams. If, right now, you could choose which future to inhabit with perfect information about the outcomes of each branch of the timeline, which mental system would you choose to evaluate this choice? What would you call it?
 
@@ -12,7 +10,7 @@ I've thought about this a lot these last few months, and about that question. I 
 
 > A system of ethics is any system which predicts future states of the universe and values them.
 
-I think that's an interesting definition to explore. It avoids anthropocentrism, is an objective description of the subjective, and captures the essential quality of that system. But that's not going to be my boldest proposal. That's going to be the following:
+I think that's an interesting definition to explore. It avoids anthropocentrism, is an objective description of the subjective, and captures the essential quality of that system. But a second statement has also haunted me:
 
 > All ethical heuristics are arbitrary.
 
