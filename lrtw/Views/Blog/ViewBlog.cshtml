@@ -1,8 +1,8 @@
 ﻿@model Blog
 @{
 	ViewData["Title"] = Model?.Title;
-	ViewData["Keywords"] = Model.Tags;
-	ViewData["Description"] = StringExtensions.SafeSubstring(Model.Content, 160);
+	ViewData["Keywords"] = Model?.Tags;
+	ViewData["Description"] = StringExtensions.SafeSubstring(Model?.Content, 160);
 }
 
 @if (Model != null)

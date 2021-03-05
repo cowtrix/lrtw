@@ -32,6 +32,10 @@ namespace lrtw
 
 		public static string SafeSubstring(this string s, int length)
 		{
+			if(string.IsNullOrEmpty(s))
+			{
+				return s;
+			}
 			if(length > s.Length)
 			{
 				return s;
