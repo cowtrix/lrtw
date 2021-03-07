@@ -4,7 +4,7 @@ Orbital re-entry of crewed spacecraft is a complicated dance of physics. You eve
 
 The same is true of orbital ejections from Earth. Generally we try to launch from near the equator as we can, and in the direction of the Earth's rotation (easterly). This is so we can take steal a bit of this initial speed and get a boost from the Earth itself. To get ourselves from one stellar body to another we might do a Hohmann transfer, which means there is going to be some arbitrary point in the stable orbital trajectory where we need to fire some impulse to get onto this new trajectory (where line '2' begins below).
 
-![A Hohmann maneuver, credit to WikiCommons](/img/220px-Hohmann_transfer_orbit.svg.png)
+![A diagram of a Hohmann transfer, credit to WikiCommons](img/220px-Hohmann_transfer_orbit.svg.png)
 
 A final point in this equation is the scheduling of these orbital maneuvers. The best times for sending a shuttle to Mars are when it is closest, an occurrence that only happens every 3 earth-years. If we do get to the point where we have permanent settlements on Mars, these 3-year cycles of sending supply vehicles will be pretty necessary for keeping those colonies alive. Their chances grow greatly if these supply lines are able to reliably deliver resources as the colony, or colonies, grow. If a launch window is missed, it's not just a case of putting a bit more fuel in the rocket and pointing it a bit differently - entire missions must be redesigned and retooled, a dangerous situation if the colonies were relying on any of those resources.
 
