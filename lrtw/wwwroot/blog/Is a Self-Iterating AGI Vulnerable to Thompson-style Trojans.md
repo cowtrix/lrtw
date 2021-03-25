@@ -1,6 +1,6 @@
 2021-03-25 #writing #ai #technology
 
-In his 1984 lecture ["Reflections on Trusting Trust"](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf), Ken Thompson (of Unix fame) speculated about a methodology for inserting an undetectable trojan horse within the C compiler binary that would [self-propogate itself](https://www.youtube.com/watch?v=SJ7lOus1FzQ) throughout all future versions.
+In his 1984 lecture ["Reflections on Trusting Trust"](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf), Ken Thompson (of Unix fame) speculated about a methodology for inserting an undetectable trojan horse within the C compiler binary that would self-propagate throughout all future versions. ([Additional good video that got me thinking about this.](https://www.youtube.com/watch?v=SJ7lOus1FzQ)))
 
 > The replacement code would miscompile the login command so that it would accept either the intended encrypted password or a particular known password. Thus if this code were installed in binary and the binary were used to compile the login command, I could log into that system as any user.
 
