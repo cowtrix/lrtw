@@ -1,6 +1,6 @@
 2021-03-25 #writing #ai #technology
 
-In his 1984 lecture ["Reflections on Trusting Trust"](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf), Ken Thompson (of Unix fame) speculated about a methodology for inserting an undetectable trojan horse within the C compiler binary that would self-propagate throughout all future versions. ([Additional good video that got me thinking about this.](https://www.youtube.com/watch?v=SJ7lOus1FzQ)))
+In his 1984 lecture ["Reflections on Trusting Trust"](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf), Ken Thompson (of Unix fame) speculated about a methodology for inserting an undetectable trojan horse within the C compiler binary that would self-propagate throughout all future versions. ([Additional good video that got me thinking about this.](https://www.youtube.com/watch?v=SJ7lOus1FzQ))
 
 > The replacement code would miscompile the login command so that it would accept either the intended encrypted password or a particular known password. Thus if this code were installed in binary and the binary were used to compile the login command, I could log into that system as any user.
 
@@ -15,17 +15,18 @@ Let's think about the most abstract representation of a system vulnerable to thi
 ![A generalised diagram of such an attack](img/Thompson-Generalised-Trojan.PNG)
 
 We represent some kind of iterative process as two types of component:
-- `S` represents the symbols we input into the iteration process.
+- `S` represents the symbols we input into the iteration process, `S'` the second set, and so on.
     - In a compiler, this is the source code.
     - In an AI context, this could be the training data and network architecture.
 - `f(S)` represents an object that has been transformed by `S`, which is in itself capable of transforming the next set of symbols `S'` into some new `f(S')`
     - In a compiler, this is the machine code
     - In an AI, this is the trained model
+- We begin with an existing function `f(S)`, and give it a new data set `S'`.^[1]^
 
 Consider an AGI which is:
 
 - powerful and generalized enough to form a well-grounded and thorough understanding of itself
-- tasked with creating its own next iteration, based on feedback from a human, where iteration requires some form of bootstrapping from itself^[1]^
+- tasked with creating its own next iteration, based on feedback from a human, where iteration requires some form of bootstrapping from itself^[2]^
 
 Could we expect Thompson-style Trojans to be possible within this scenario? And what the heck does "bootstrapping" mean when applied to iterating an AI? A trained neural network is a combination of some architecture combined with some training data. Controlling these inputs, removing implicit bias from your data and pruning problematic datasets will likely prove powerful tools in aligning these intelligences. Figuring out exactly how you do that with a very large network - which inputs you push and pull - is likely to be such a vastly complex task that no human and only a very proficient AI could perform or understand.
 
@@ -48,4 +49,6 @@ A discriminator `D` trying to guide the alignment of this theoretical AI `M`.
 
 Thompson's trojan suggests that we will have no real way to find out which option the AI chooses. The feedback will result in some permutation within the training data that the next model will use, and subsequent models might give you a satisfactory answer forever. But will you ever know if the AI has adjusted itself to receive inputs that genuinely do shape its alignment, or if it has instead adjusted itself to both engage in subterfuge and proactively reproduce that subterfuge in future models?
 
-[1] This is not to say that *all* AGI will follow this pattern and therefore be vulnerable to this attack, only that the AGI that do follow this specific pattern may be vulnerable.
+[1]  Where does this original `f(S)` come from you ask? Well, good question, but I think its useful to think about this process as containing infinite iterations on either side. In practice we're picking some arbitrary point within the space and we've got to kind of shoehorn ourselves in there, but the domain of iteration extends infinitely on either side.
+
+[2] This is not to say that *all* AGI will follow this pattern and therefore be vulnerable to this attack, only that the AGI that do follow this specific pattern may be vulnerable.
