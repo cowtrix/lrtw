@@ -26,7 +26,7 @@ We represent some kind of iterative process as two types of component:
 Consider an AGI which is:
 
 - powerful and generalized enough to form a well-grounded and thorough understanding of itself
-- tasked with creating its own next iteration, based on feedback from a human, where iteration requires some form of bootstrapping from itself^[2]^
+- tasked with creating its own next iteration, based on feedback from a human, where iteration requires some form of bootstrapping from itself.^[2]^
 
 Could we expect Thompson-style Trojans to be possible within this scenario? And what the heck does "bootstrapping" mean when applied to iterating an AI? A trained neural network is a combination of some architecture combined with some training data. Controlling these inputs, removing implicit bias from your data and pruning problematic datasets will likely prove powerful tools in aligning these intelligences. Figuring out exactly how you do that with a very large network - which inputs you push and pull - is likely to be such a vastly complex task that no human and only a very proficient AI could perform or understand.
 
