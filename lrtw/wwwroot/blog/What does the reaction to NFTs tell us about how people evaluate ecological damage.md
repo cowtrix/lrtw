@@ -1,4 +1,4 @@
-2021-03-24 #writing #blockchain #technology
+2021-03-24 #writing #blockchain #technology #question
 
 Recently, the Ethereum Foundation finalised the [ERC-721 interface standard](https://eips.ethereum.org/EIPS/eip-721) for Non-Fungible Tokens (NFTs). This standard lays out a protocol for the exchange and ownership of this new class of assets. An extremely simple explanation of the ERC-721 standard is as follows:
 
