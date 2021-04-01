@@ -10,7 +10,7 @@ This is in no way meant to attack or demean Chiang's great piece - it was a well
 
 # Claims
 
-As far as I can make out, Chiang makes X problematic claims in order to support the proposition that a self-iterating AGI is not a threat.
+As far as I can make out, Chiang makes 4 problematic claims in order to support the proposition that a self-iterating AGI is not a significant threat.
 
 ## 1. AI researchers measure intelligence through a single number.
 
