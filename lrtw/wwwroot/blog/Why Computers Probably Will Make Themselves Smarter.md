@@ -4,11 +4,9 @@ Recently, author Ted Chiang wrote an article entitled [Why Computers Won’t Mak
 
 > We fear and yearn for “the singularity.” But it will probably never come.
 
-I'd like to address some of the ideas in this article from the perspective of someone who probably has more knowledge about AI than the average punter, but who probably isn't going to be winning any prizes anytime soon - so I'll get some stuff wrong. But it does seem like this article represents a layman's understanding of these concepts, and I think drilling down into the nitty gritty a bit more might reveal some flaws.
+I'd like to address some of the ideas in this article from the perspective of someone who has more knowledge about AI than the average punter, but who isn't going to be winning any prizes anytime soon - so I might get some stuff wrong. But it does seem like this article represents a layman's understanding of these concepts, and I think drilling down into the nitty gritty a bit more might reveal some flaws.
 
 This is in no way meant to attack or demean Chiang's great piece - it was a well-written expression of common perceptions around this issue. This is precisely why I think it is worthwhile to address. In this spirit, instead of the typical "forensic dissection" tactic often seen when critiquing articles (which can lose sight of the forest in the trees) I will attempt to summarise Chiang's claims and address them one-by-one.
-
-# Claims
 
 As far as I can make out, Chiang makes 4 problematic claims in order to support the proposition that a self-iterating AGI is not a significant threat.
 
@@ -44,7 +42,7 @@ Chiang talks about bootstrapping compilers and this is, in my opinion, actually 
 
 ## 4. AGI will Optimize For Generality
 
-Chiang states that there is some limit to how generalizable an intelligence can be, and that an intelligence explosion requires there to be no limit. But this is, I believe, another case of anthropomorphizing intelligence. It is indeed entirely possible that there is some limit to how general an intelligence can be, *given some amount of finite compute*. But it is also unreasonable to imagine that such a limit should correlate to human biological patterns. The limit could reasonably be a few orders of magnitude above human intelligence. We have a tendency to peg the intelligence level of human beings as some intrinsically special point within the space of intelligence, but it is just an arbitrary level. The universe has no in-built opinion on the subject.
+Chiang states that there is some limit to how generalizable an intelligence can be, and that an intelligence explosion requires there to be no limit. But this is, I believe, another case of anthropomorphizing intelligence. It is indeed entirely possible that there is some limit to how general an intelligence can be, *given some amount of finite compute*. But it is also unreasonable to imagine that such a limit should correlate to human biological patterns. The limit could reasonably be a few orders of magnitude above human intelligence. We have a tendency to peg the intelligence level of human beings as some intrinsically special point within the domain of intelligence, but it is just an arbitrary one. The universe has no in-built opinion on the subject.
 
 There is also the assumption that an AGI needs to be actively and consciously optimizing for generalizability in order to achieve it, but I'm not sure that follows as well. Generalizability of intelligence may be a metric that an outside observer tracks about an intelligence, and trains that intelligence against, but that is a fundamentally different thing to it being an internal heuristic that we have to understand to improve. This is because, within modern AI strategies at least, *generalizability is a statistical phenomenon, not a logical one*. While I always warn against anthropomorphism, this does at least track with my subjective experience of generalizable intelligence - I don't necessarily have to understand *how* I drew a connection between two different but connected concepts to draw that connection.
 
