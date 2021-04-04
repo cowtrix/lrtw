@@ -16,7 +16,11 @@ namespace lrtw
 		public static string RegexReplace(this string input, string pattern, string replacement)
 		{
 			var rgx = new Regex(pattern);
-			return rgx.Replace(input, replacement);
+			while(rgx.IsMatch(input))
+			{
+				input = rgx.Replace(input, replacement);
+			}
+			return input;
 		}
 
 		public static string ToHtml(string s)

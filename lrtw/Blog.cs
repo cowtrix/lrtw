@@ -26,9 +26,9 @@ namespace lrtw
 		{
 			public string Link => Content
 				.Trim()
-				.Replace(".", "")
-				.Replace(" ", "-")
-				.RegexReplace(@"^\s*\d+.", "")
+				.RegexReplace(@"[^\w\s]", "")	// Strip punctuation but preserve whitespace
+				.Replace(" ", "-")				// Replace whitespace with dashes
+				.RegexReplace(@"^\s*\d+.", "")	// Replace numbered list start
 				.ToLowerInvariant();
 			public string Content;
 			public int Indent;

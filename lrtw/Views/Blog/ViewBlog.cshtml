@@ -15,7 +15,7 @@
 			</div>
 		}
 		<partial name="../BlogHeaderPartial" />
-		@if (Model.Headers.Any())
+		@if (Model.Headers.Count() > 2)
 		{
 			<div class="contents-container">
 				@foreach (var h in Model.Headers)
