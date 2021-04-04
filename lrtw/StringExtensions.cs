@@ -25,7 +25,8 @@ namespace lrtw
 
 		public static string StripMarkdown(this string input)
 		{
-			return Markdown.ToPlainText(input);
+			return Markdown.ToPlainText(input)
+				.Replace("^", "");
 		}
 
 		public static string ToHtml(string s)
