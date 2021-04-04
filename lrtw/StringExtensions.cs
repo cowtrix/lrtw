@@ -25,6 +25,10 @@ namespace lrtw
 
 		public static string StripMarkdown(this string input)
 		{
+			if(string.IsNullOrEmpty(input))
+			{
+				return input;
+			}
 			return Markdown.ToPlainText(input)
 				.Replace("^", "");
 		}
