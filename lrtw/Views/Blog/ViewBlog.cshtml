@@ -21,7 +21,7 @@
 				@foreach (var h in Model.Headers)
 				{
 				<div class="contents-indent-@h.Indent">
-					<a href="#@h.Link">@h.Content</a>
+					<a href="#@h.Link">@StringExtensions.ToHtml(h.Content)</a>
 				</div>
 				}
 			</div>
