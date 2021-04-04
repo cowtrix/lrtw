@@ -2,7 +2,7 @@
 @{
 	ViewData["Title"] = Model?.Title;
 	ViewData["Keywords"] = Model?.Tags;
-	ViewData["Description"] = StringExtensions.SafeSubstring(Model?.Content, 160);
+	ViewData["Description"] = StringExtensions.SafeSubstring(StringExtensions.StripMarkdown(Model?.Content), 160);
 }
 
 @if (Model != null)
@@ -21,7 +21,7 @@
 				@foreach (var h in Model.Headers)
 				{
 				<div class="contents-indent-@h.Indent">
-					<a href="#@h.Link">@StringExtensions.ToHtml(h.Content)</a>
+					<a href="#@h.Link">@StringExtensions.StripMarkdown(h.Content)</a>
 				</div>
 				}
 			</div>

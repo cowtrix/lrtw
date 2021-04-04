@@ -23,6 +23,11 @@ namespace lrtw
 			return input;
 		}
 
+		public static string StripMarkdown(this string input)
+		{
+			return Markdown.ToPlainText(input);
+		}
+
 		public static string ToHtml(string s)
 		{
 			var pipeline = new MarkdownPipelineBuilder()
