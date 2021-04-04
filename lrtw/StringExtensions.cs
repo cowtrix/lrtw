@@ -13,6 +13,12 @@ namespace lrtw
 			return collection.Count;
 		}
 
+		public static string RegexReplace(this string input, string pattern, string replacement)
+		{
+			var rgx = new Regex(pattern);
+			return rgx.Replace(input, replacement);
+		}
+
 		public static string ToHtml(string s)
 		{
 			var pipeline = new MarkdownPipelineBuilder()

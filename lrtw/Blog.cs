@@ -28,6 +28,7 @@ namespace lrtw
 				.Trim()
 				.Replace(".", "")
 				.Replace(" ", "-")
+				.RegexReplace(@"^\s*\d+.", "")
 				.ToLowerInvariant();
 			public string Content;
 			public int Indent;
