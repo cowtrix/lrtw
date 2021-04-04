@@ -25,12 +25,12 @@ namespace lrtw
 		public void ConfigureServices(IServiceCollection services)
 		{
 			// Setup SSL certificate with Let's Encrypt
-			services.AddLettuceEncrypt(config =>
+			/*services.AddLettuceEncrypt(config =>
 			{
 				config.AcceptTermsOfService = true;
 				config.DomainNames = new[] { "lrtw.net" };
 				config.EmailAddress = "seandgfinnegan@protonmail.com";
-			});
+			});*/
 			services.AddControllersWithViews();
 			services.AddResponseCompression();
 		}
