@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using LettuceEncrypt;
 
 namespace lrtw
 {
@@ -23,6 +24,13 @@ namespace lrtw
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			// Setup SSL certificate with Let's Encrypt
+			services.AddLettuceEncrypt(config =>
+			{
+				config.AcceptTermsOfService = true;
+				config.DomainNames = new[] { "lrtw.net" };
+				config.EmailAddress = "seandgfinnegan@protonmail.com";
+			});
 			services.AddControllersWithViews();
 			services.AddResponseCompression();
 		}
