@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -21,9 +22,28 @@ namespace lrtw
 			}
 		}
 
+		public struct Header
+		{
+			public string Link => Content
+				.Trim()
+				.Replace(".", "")
+				.Replace(" ", "-")
+				.ToLowerInvariant();
+			public string Content;
+			public int Indent;
+		}
+
 		public string ThumbnailPath { get; }
 		public string[] Tags { get; }
 		public int WordCount { get; }
+		public IEnumerable<Header> Headers =>
+			Lines.Where(c => c.StartsWith("#"))
+			.Select(c =>
+				new Header
+				{
+					Content = c.Replace("#", ""),
+					Indent = c.Count(x => x == '#')
+				});
 		public override string Content => string.Join("\n\n", Lines.Skip(1));
 		public override string Title
 		{

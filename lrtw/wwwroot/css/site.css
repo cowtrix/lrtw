@@ -169,3 +169,24 @@ blockquote::after {
 	/*Reset to make sure*/
 	content: "";
 }
+
+.contents-container {
+	display: block;
+	margin: auto;
+	margin-top: 1em;
+	padding: 20px;
+	background-color: #00000033;
+}
+
+.contents-indent-2
+{
+	padding-left:10px;
+}
+
+.contents-indent-3 {
+	padding-left: 20px;
+}
+
+.contents-indent-4 {
+	padding-left: 30px;
+}
