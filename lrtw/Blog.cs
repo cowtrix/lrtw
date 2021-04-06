@@ -34,6 +34,7 @@ namespace lrtw
 			public int Indent;
 		}
 
+		public string URL => $"{Program.URL}/blog/{Slug}";
 		public string ThumbnailPath { get; }
 		public string[] Tags { get; }
 		public int WordCount { get; }

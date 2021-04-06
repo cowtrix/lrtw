@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace lrtw
 {
+
 	public class Startup
 	{
 		public Startup(IConfiguration configuration)
@@ -25,6 +27,16 @@ namespace lrtw
 		{
 			services.AddControllersWithViews();
 			services.AddResponseCompression();
+			services.AddHttpContextAccessor();
+			services.AddMvc(options =>
+			{
+				options.CacheProfiles.Add("RssCacheProfile",
+					new CacheProfile()
+					{
+						Duration = 30 * 60
+					});
+			});
+			services.AddScoped<cloudscribe.Syndication.Models.Rss.IChannelProvider, RSSFeedBuilder>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

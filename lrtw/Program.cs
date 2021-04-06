@@ -39,6 +39,8 @@ namespace lrtw
 
 		public const string BLOG_PATH = @".\wwwroot\blog";
 
+		public const string URL = "www.lrtw.net";
+
 		public static void Main(string[] args)
 		{
 			CreateHostBuilder(args).Build().Run();
