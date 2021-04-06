@@ -40,6 +40,7 @@ namespace lrtw
 		public const string BLOG_PATH = @".\wwwroot\blog";
 
 		public const string URL = "www.lrtw.net";
+		public const string SITE_DESCRIPTION = "A personal blog dedicated to whatever the hell I'm up to - programming, writing, travelling, generally having a good time.";
 
 		public static void Main(string[] args)
 		{

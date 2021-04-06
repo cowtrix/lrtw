@@ -30,7 +30,7 @@ namespace lrtw
 			var channel = new RssChannel
 			{
 				Title = "lrtw",
-				Description = "A Blog",
+				Description = Program.SITE_DESCRIPTION,
 				Copyright = "",
 				Generator = Name,
 				RemoteFeedUrl = "",
@@ -43,7 +43,7 @@ namespace lrtw
 						Link = new System.Uri($"https://{b.URL}"),
 						Title = b.Title,
 						PublicationDate = b.TimeCreatedUTC,
-						Description = b.Content.StripMarkdown().SafeSubstring(256) + "...",
+						Description = b.Content.StripMarkdown().SafeSubstring(256).Trim() + "... Read More.",
 						Guid = new RssGuid($"https://{b.URL}", true),
 					}).ToList()
 			};
