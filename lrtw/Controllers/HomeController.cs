@@ -13,14 +13,14 @@ namespace lrtw.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
-		
+
 		public const int PAGE_BLOG_COUNT = 5;
 		public const string PAGE_KEY = "page";
 		public const string RESULT_SIZE = "resultsize";
 
 		public HomeController(ILogger<HomeController> logger)
 		{
-			_logger = logger;			
+			_logger = logger;
 		}
 
 		public IActionResult Index([FromQuery] int page = 1, [FromQuery] string tag = null)
@@ -36,8 +36,15 @@ namespace lrtw.Controllers
 			return View(paginated);
 		}
 
+		[Route("compact")]
+		public IActionResult Compact([FromQuery] string tag = null)
+		{
+			return View(Program.AllBlogs
+					.Where(b => string.IsNullOrEmpty(tag) || b.Tags.Contains(tag)));
+		}
+
 		[HttpGet("{id}")]
-		public IActionResult Page([FromRoute]string id)
+		public IActionResult Page([FromRoute] string id)
 		{
 			return View(Program.AllPages.SingleOrDefault(p => string.Equals(id, p.Title, StringComparison.OrdinalIgnoreCase)));
 		}
