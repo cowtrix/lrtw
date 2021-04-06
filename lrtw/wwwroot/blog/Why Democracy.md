@@ -1,4 +1,4 @@
-2021-04-04 #writing #philosophy #question
+2021-04-04 #writing #politics #question
 
 I am an avid and radical believer in the [systemic property](https://eaasos.info/Content/System/CPT_SysProps.htm) of democracy. But if you had asked me (before I wrote this, anyway) *why* I hold such a strong and deeply-held belief, I would have been uncomfortable with the amount of [cultural conditioning](https://www.exceptionalfutures.com/cultural-conditioning/) that would come to mind. I grew up in in the West where you are saturated with a nominally pro-democracy viewpoint for your whole life, and so it is easy to endorse it *as* an ethical axiom, as opposed to in support of ethical axioms. It isn't enough for me to just feel strongly in support of radical democracy - I need to be able to tell you why.  
  
@@ -128,27 +128,27 @@ Imagine that there is an upcoming decision about cancer research. I don't know v
 
 It can be useful, when trying to nail down a specific definition of a term, to figure out what the edge cases are, and what the negative cases are. Here are a few scenarios that I don't think count as democracies, but are interestingly different, or at least pose interesting questions:
  
-### 1. The Sortition
+## 1. The Sortition
  
   Imagine a society wherein every decision is made via a random sortition of the entire population. The random sortition may grow or shrink based on the desired level of confidence, but it never encompasses a majority of constituents. And yet, this system does to a high probability produce the same results as performing naive referendums for every decision. But is such a system highly democratic?
 
-### 2. The Benevolent Omniscient
+## 2. The Benevolent Omniscient
 
 Imagine a society governed entirely by an extremely intelligent being, an ideal "Philosopher King". This being is able to predict the material needs of every individual and ensures that all needs are met. Nobody goes hungry, homeless, or even unoccupied. Generally, if you ask people, they are fairly content and agree with the decisions that the AI makes for them - but they are never allowed to make their own decisions. Is this system democratic?
 
-### 3. The Yeerks
+## 3. The Yeerks
 
 Imagine a society where every human is taken over by a parasitic brain worm which slightly modifies their desires to include never getting rid of the brain-worm, but otherwise leaves them autonomous. Could such a society ever form a truly democratic consensus?
 
-### 4. Literally The West?
+## 4. Literally The West?
 
 Imagine a society in which constant elections are run, councils sortitioned from the people, censuses taken, etc. in order to capture the preferences of the demos as accurately as possible. However, the state's actions are completely uncorrelated with those preferences - that is, it pursues its own goals and doesn't attempt to help its citizens achieve their own. Would we describe this system as highly democratic?
 
-### 5. No Spoon For You
+## 5. No Spoon For You
 
 Imagine a society in which all individuals are kept trapped within a simulation. Within the confines of the simulation, each individual is a god-like entity who is able to shape reality and experience anything they want and fulfil any desire they want. However, they cannot leave the simulation. Do individuals within this society have agency?
 
-### 6. The Perfect Union
+## 6. The Perfect Union
 
 Imagine a society that, at a certain moment in time, perfectly captures the preferences of every individual. The society expends a large amount of work to generate a perfect constitutional document from this data. This document outlines how to address those preferences in excruciating detail and will probably do an almost perfect job. However, the constitution specifies that it is a permanent document. It can be amended, but in general it is a document that embodies the eternal authority state and will stay unchanged forever. Is such a society highly democratic that first day? Will it be as democratic in a millenium?
 
