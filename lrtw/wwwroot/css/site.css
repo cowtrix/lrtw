@@ -204,3 +204,7 @@ blockquote {
 	padding-top: 7px;
 }
 
+iframe.toy {
+	width:100%;
+	height:auto;
+}

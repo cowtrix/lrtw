@@ -32,11 +32,10 @@ namespace lrtw
 				Title = "lrtw",
 				Description = Program.SITE_DESCRIPTION,
 				Copyright = "",
-				Generator = Name,
+				Generator = Name,				
 				RemoteFeedUrl = "",
 				Link = new System.Uri($"https://{Program.URL}"),
 				RemoteFeedProcessorUseAgentFragment = "",
-
 				Items = allitems.Take(itemCount)
 					.Select(b => new RssItem
 					{
