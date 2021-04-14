@@ -27,10 +27,6 @@ namespace lrtw
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.Configure<KestrelServerOptions>(options =>
-			{
-				options.AllowSynchronousIO = true;
-			});
 			services.AddControllersWithViews();
 			services.AddResponseCompression();
 			services.AddHttpsRedirection(options =>
@@ -48,6 +44,10 @@ namespace lrtw
 					});
 			});
 			services.AddScoped<cloudscribe.Syndication.Models.Rss.IChannelProvider, RSSFeedBuilder>();
+			services.Configure<IISServerOptions>(options =>
+			{
+				options.AllowSynchronousIO = true;
+			});
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
