@@ -47,7 +47,8 @@ namespace lrtw
 			return Uri.EscapeUriString(s.ToLowerInvariant()
 				.Replace(" ", "")
 				.Replace("#", "-")
-				.Replace("?", ""));
+				.Replace("?", "")
+				.Replace("'", ""));
 		}
 
 		public static string SafeSubstring(this string s, int length)
