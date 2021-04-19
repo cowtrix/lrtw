@@ -1,4 +1,4 @@
-2021-02-24 #writing #philosophy
+2021-04-19 #writing #philosophy
 
 > "All models are wrong, but some are useful"
 > -- <cite>[George Box](https://en.wikipedia.org/wiki/George_E._P._Box)</cite>
