@@ -1,7 +1,6 @@
 2021-04-19 #writing #philosophy
 
-> "All models are wrong, but some are useful"
-> -- <cite>[George Box](https://en.wikipedia.org/wiki/George_E._P._Box)</cite>
+> "All models are wrong, but some are useful" -- <cite>[George Box](https://en.wikipedia.org/wiki/George_E._P._Box)</cite>
 
 As our ability to model and simulate systems grows, we exert more and more computation on simulating ourselves - human agents, society, the systems which make up our existence. We simulate economic systems, weather systems, transport systems, power grids, ocean currents, the movements of crowds, and a million other models of our real world that attempt to predict some spread of possibilities from a given state. I've talked a little bit about how, if these systems rank future states based on some heuristic of desirability, they transform into [ethical systems](https://lrtw.net/blog/ethics&arbitraryobjects) by definition. However, a model can only simulate the computable, and there is one object which remains resolutely uncomputable - the agency of egos. I use the word "ego" instead of words like "human being", "person", "intelligence" and so on because I want to try to generalise beyond how people work, because I think this is a more general problem than just the realm of the meatbags. There are many words to choose from that each capture some essence of what I mean, but by "ego" I mean an intelligent agent who possesses agency within the world, a sense of self, and preferences for the future. We may find ourselves immensely frustrated at this uncomputability in the future, and I believe it to be an insurmountable task. Here's why.
 
