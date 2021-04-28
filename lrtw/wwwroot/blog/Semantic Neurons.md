@@ -157,7 +157,7 @@ One optimisation I thought might be useful is sharing good programs from previou
 
 Even so, this took a *long* time - the CPU version took almost 31 hours to fill out the full set! And even after that, we had a lot of failure cases. However, I'm pretty sure all of these failure cases would have eventually folded to computation and in general I think the premise holds promise. I slightly changed the colouring on this one so you could see the detail a bit more - the red channel is our error, the green channel is our generations, so yellow pixels are our failure cases:
 
-![A final plot of our graph.](https://lrtw.net/blog/img/functiongen/output_final.png]
+![A final plot of our graph.](https://lrtw.net/blog/img/functiongen/output_final.png)
 
 In general, I think this is a promising route. Can we create an array of these objects and train them to cooperate? Let's find out next time!
 
@@ -171,5 +171,9 @@ I implemented this algorithm both on the CPU (C# code) and the GPU (CUDA). Both 
     - It would be possible to completely serialize (i.e. remove branching) the program calculating code. We're actually in an ok spot for this, because our branching happens right at the very end when we process the instruction set.
     - I'm a little less unsure how to serialize the mutation code. Randomness on the GPU is tricky, because you're trying to do everything the same, and yet produce a wide range of mutations that effectively explore the possibility space.
 - My CPU is a lot more powerful than my GPU as I'm on a laptop, so with that hardware setup I didn't actually see a huge improvement in performance.
+
+# Get The Source
+
+You can find all my source code here: https://github.com/cowtrix/SemanticNeurons
 
 [^1]: It is inaccurate to represent a neuron's output by a single float value, especially if we want the activation of a neuron to activate a range of neurons within lower layers. However, the structure of the function here is fairly arbitrary. We define the ground rules, the input, the output, and the transformations. All that matters is that we give a big enough possibility space and enough compute to the generational algorithm for it to find a good solution.
