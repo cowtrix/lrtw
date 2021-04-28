@@ -14,20 +14,24 @@ lrtw stands for Lizards Rule The World
 lrtw stands for Legitimate Right To Write
 lrtw stands for Leading Readers To Wrongness
 [Email me](mailto:seandgfinnegan@protonmail.com) recipes for good vegetarian food.
-If you're quoting me then something has gone terribly wrong.
+If you're reading this then something has gone terribly wrong.
 Okay, but why not go and read someone smarter?
 Everyone is equal.
 Flow states are pretty cool.
 Be a friend to yourself.
 I miss South America.
-Sean Fact: I do fire spinning
-A basilisk is a word meaning a memetic hazard.
+Sean Fact: I do fire spinning.
 Why is everyone I buy teeth from such a weirdo?
-I lived in a van called Babo Conquista for a year.
+I lived in a van called Babo Conquista.
 I miss Spiti Valley!
 Today you, tomorrow me.
 Everything was beautiful, and nothing hurt.
 Be kind.
 If you can't be correct, at least be prolific.
-To fuck around is human; to find out is divine.
+To fuck around is human; to find out divine.
+Maximise agency, minimise suffering.
 [Here's](https://soundcloud.com/cowtrix) my SoundCloud.
+This is a blank message with no meaning.
+Ce n'est pas un blog.
+ここでは何も、あなたの時間を無駄にして申し訳ありません
+"This is more constructive than social media!", he tried to convince himself.
