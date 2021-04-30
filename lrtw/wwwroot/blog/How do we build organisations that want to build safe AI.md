@@ -18,7 +18,7 @@ These groups are not necessarily separated, but rather represent a categorisatio
 
 ![](img/AISafetyOrganisation_TableStakeholders.PNG)
 
-In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. The Safety Team row is highlighted in order to demonstrate its necessity in this equation, and how it fulfils a role distinct from others.
+In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. Note how the Safety Team fulfils a role distinct from others.
 
 - *Technical Control*: This refers to direct development of the core technologies relating to the AIS. For instance, decisions about algorithms, datasets, technical systems and other domains which require specialized knowledge.
 - *Operational Control*: This refers to the ability to halt, limit, or otherwise suppress the operation of an AIS. For instance, decisions around halting the release of a feature or update, or even decisions around taking the whole system down.
