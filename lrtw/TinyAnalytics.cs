@@ -18,7 +18,7 @@ namespace lrtw
 		{
 			if (!File.Exists(ANALYTICS_PATH))
 			{
-				return null;
+				return new List<Entry>();
 			}
 			return File.ReadAllLines(ANALYTICS_PATH)
 				.Select(s => s.Split('\t'))
