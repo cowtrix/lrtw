@@ -66,7 +66,7 @@ However, it is not enough merely to mandate the existence of a safety, testing a
 
 If it is possible for an organisation to exert control over the Safety Team to the extent where you can remove this cost - i.e. by ignoring a recommendation, firing troublesome members of the team, limiting hiring to agreeable staff, or through a myriad of other mechanisms - then that organisation will be strongly incentivized to do so. If the organisation knows that competitors are faced with the same ability to exert control, then we find ourselves within a classic Prisoner's Dilemma. Other competitors who act less ethically will optimise more efficiently, and therefore be able to outcompete any scrupulous organisation.
 
-It is this strong incentive that makes a fully independent organisation unable to effectively self-regulate for ethics and safety, and for this reason that Safety Teams must interact with some external support framework that imbues them with legal power and legitimacy. If acting safely is a question of choice, then organisations *might* act safely, if it is in alignment with their other goals. But that is not a sufficient incentivization structure to ensure no large ethical errors. The only way to make it not solely a choice of the organisation is to distribute the power over these decisions in concrete, enforceable ways and ensure that all organisations developing these tools know that other competitors face the same restrictions.
+It is this strong incentive that makes a fully independent organisation unable to effectively self-regulate for ethics and safety, and for this reason that Safety Teams must interact with some external support framework that imbues them with legal power and legitimacy. If acting safely is a question of choice, then organisations *might* act safely, if it is in alignment with their other goals. But that is not a sufficient incentivization structure to ensure no large ethical errors. The only way to make it not solely a choice of the organisation is to distribute the power over these decisions in concrete, enforceable ways and ensure that all organisations developing these systems know that other competitors face the same restrictions.
 
 # So what do we do?
 
@@ -76,7 +76,7 @@ These principles present us with a set of difficult problems, though they also u
 
 An effective Safety Team must simultaneously be independent from the parent organisation, and yet closely interwoven with its operations. This demands a hybrid solution - a tradeoff - between those two properties of organisational structure. This means that a robust safety process must have the following properties:
 
-### 1. Safety Teams must have agnostic funding & finances
+### 1. Safety Teams must have agnostic funding & finances.
 
 Allowing Safety Teams to be funded through the methods traditionally utilised in an organisation is not possible. The risk of exerting control over the Team via quid-pro-quo arrangements or denial of funds is too high. There are a few solutions to this that I can see:
 
@@ -84,11 +84,11 @@ Allowing Safety Teams to be funded through the methods traditionally utilised in
 - **Mandated Private Funding**: Require an organisation to have a set ratio of Safety Team budget to Production Team budget. However, this places a concerning material limit on the Safety Team, and opens the possibility of regulatory capture reducing the mandated funding below a level where the Teams are effective.
 - **Hybrid Private & Community Funding**: Combining mandates on private funding by the wider organisation with a mechanism for direct funding by the public enables direct community action to correct in the short-term for regulatory capture. In this scenario, it would be possible to directly donate to Safety Teams as if donating to any charitable organisation. This opens the possibility of things like requiring the wider organisation to match donations.
 
-### 2. Safety Teams must have federalised organisation
+### 2. Safety Teams must have federalised organisation.
 
 Because of their orthogonal goals, there will inevitably sometimes be an adversarial relationship between the AI Safety community and the AIS Product Owners. These Product Owners often have vast economic and legal resources available to them and a strong incentive to exert influence over the Safety Team. If we want to be able to consistently seed teams that are protected from undue influence, those teams must be connected to a wider federalised[^1] community that can provide support, resources and collective bargaining power.
 
-### 3. Safety Teams must have autonomy over hiring/firing
+### 3. Safety Teams must have autonomy over hiring/firing.
 
 One of the primary attacks that an organisation will be incentivised to consider is the firing of Safety Team members that are creating a high level of cost, or the filtering of Safety Team hiring to build a compliant group of people unlikely to be troublesome. Considering the purpose of a Safety Team is precisely to be troublesome when that is required, this represents a deep threat to the autonomy of that team. It is therefore critical that a Safety Team control its own hiring and firing processes autonomously from the wider organisation.
 
@@ -105,11 +105,11 @@ If the mission of establishing an independent industry of AI Safety Teams succee
 However, this is unlikely to be true for members of the Production Team, Product Owners, or any member of the larger organisation. It is certain that organisations will continue to take punitive and chilling actions against whistleblowers if they are able to. A member of the Production Team who comes forward with ethical concerns must weigh a very high risk. This is an unacceptable inefficiency in our ability to learn about these systems from the outside.
 
 - **Whistleblower-to-Safety Pipeline**: The new "AI Safety Team" industry that would emerge from this proposal would likely value the qualities that would cause a whistleblower to come forward, and so what may be a liability in continuing work within Production Teams may be a strength to move into the Safety Team industry.
-- **Protections Against NDAs**: While nominally many NDAs are void when covering an action that is reporting a crime, the law is much more unclear around reporting safety or ethical concerns that do not clearly break the law. Even in cases of clear legal coverage, the vast resources available to these organisations allow them to outspend any assailant. Whistleblowers must be represented freely by the collective AI Safety organisation, and legal protections must exist against NDAs being used in this way.
+- **Protections Against NDAs**: While nominally many NDAs are void when covering an action that is reporting a crime, the law is much more unclear around reporting safety or ethical concerns that do not clearly break the law. Even in cases of clear legal coverage, the vast resources available to these organisations allow them to outspend almost anyone. Whistleblowers must be represented freely by the collective AI Safety organisation, and legal protections must exist against NDAs being used in this way.
 
 # Conclusion
 
-Until we recognise the orthoganal incentives of different social groups developing AIS, we cannot expect to be able to know how organisations can reliably produce safe and ethical applications of this technology. It is very important to understand that negative AI externalities are very rarely the result of directed malevolence by any single individual, and that even the best-case organisation filled with deeply-considered philosophers is vulnerable to drifting its alignment away from the common good. The things which make a Production Team good at optimising a product make them bad at being a Safety Team. That doesn't make the Production Team ethically bad - it just necessitates an independant watcher, tester and verifier.
+Until we recognise the orthoganal incentives of different social groups developing AIS, we cannot expect to be able to know how organisations can reliably produce safe and ethical applications of this technology. It is very important to understand that negative AI externalities are very rarely the result of directed malevolence by any single individual, and that even the best-case organisation filled with deeply-considered philosophers is vulnerable to drifting its alignment away from the common good. The things which make a Production Team good at optimising a product make them bad at being a Safety Team. That doesn't make the Production Team, Product Owners, or anyone ethically bad - it just necessitates an independant watcher, tester and verifier.
 
 *[AIS]: Artificial Intelligence System: any technological system that embeds, integrates, or otherwise directly utilises an intelligence which is not human.
 
