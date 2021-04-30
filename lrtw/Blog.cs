@@ -28,6 +28,7 @@ namespace lrtw
 				.Trim()
 				.RegexReplace(@"[^\w\s]", "")	// Strip punctuation but preserve whitespace
 				.Replace(" ", "-")				// Replace whitespace with dashes
+				.Replace("--", "-")
 				.RegexReplace(@"^\s*\d+.", "")	// Replace numbered list start
 				.ToLowerInvariant();
 			public string Content;
