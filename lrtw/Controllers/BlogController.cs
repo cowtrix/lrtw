@@ -19,6 +19,10 @@ namespace lrtw.Controllers
 		public IActionResult ViewBlog(string id)
 		{
 			var blog = Program.AllBlogs.SingleOrDefault(b => b.Slug == id);
+			if(blog != null && HttpContext.Request.Cookies.ContainsKey("anon"))
+			{
+				TinyAnalytics.RegisterView(id);
+			}
 			return View(blog);
 		}
 	}
