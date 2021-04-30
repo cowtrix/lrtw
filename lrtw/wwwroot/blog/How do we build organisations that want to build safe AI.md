@@ -107,6 +107,10 @@ However, this is unlikely to be true for members of the Production Team, Product
 - **Whistleblower-to-Safety Pipeline**: The new "AI Safety Team" industry that would emerge from this proposal would likely value the qualities that would cause a whistleblower to come forward, and so what may be a liability in continuing work within Production Teams may be a strength to move into the Safety Team industry.
 - **Protections Against NDAs**: While nominally many NDAs are void when covering an action that is reporting a crime, the law is much more unclear around reporting safety or ethical concerns that do not clearly break the law. Even in cases of clear legal coverage, the vast resources available to these organisations allow them to outspend any assailant. Whistleblowers must be represented freely by the collective AI Safety organisation, and legal protections must exist against NDAs being used in this way.
 
+# Conclusion
+
+Until we recognise the orthoganal incentives of different social groups developing AIS, we cannot expect to be able to know how organisations can reliably produce safe and ethical applications of this technology. It is very important to understand that negative AI externalities are very rarely the result of directed malevolence by any single individual, and that even the best-case organisation filled with deeply-considered philosophers is vulnerable to drifting its alignment away from the common good. The things which make a Production Team good at optimising a product make them bad at being a Safety Team. That doesn't make the Production Team ethically bad - it just necessitates an independant watcher, tester and verifier.
+
 *[AIS]: Artificial Intelligence System: any technological system that embeds, integrates, or otherwise directly utilises an intelligence which is not human.
 
 [^1]: "Federalised" in this context does not mean "relating to the federal government". Rather, it just means a collective of semi-autonomous groups gathered in some common purpose and regulated by some common constitution.
