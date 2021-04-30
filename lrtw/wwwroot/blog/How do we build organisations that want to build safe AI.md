@@ -16,79 +16,13 @@ Who are the groups that have a stake in the safety of developing AIS?
 
 These groups are not necessarily separated, but rather represent a categorisation based on differences in goals and differences in power. Obviously, everyone falls into the last category regardless of involvement. Some people on the Production or Safety teams may have direct equity in the product they are developing, and therefore also fall within the category of Product Owners. There are many complex interactions between each group, with each exhibiting different goals and relationships to power.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-syad{background-color:#000000;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
-.tg .tg-x5oc{background-color:#fe996b;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-x6qq{background-color:#dae8fc;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-g1fv{background-color:#333333;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-	<thead>
-	  <tr>
-		<th class="tg-fymr"></th>
-		<th class="tg-0pky"><span style="font-weight:bold">Goal</span><br></th>
-		<th class="tg-fymr">Technical<br>Control</th>
-		<th class="tg-fymr">Operational<br>Control</th>
-		<th class="tg-fymr">Goal<br>Control</th>
-		<th class="tg-fymr">Legal<br>Control</th>
-		<th class="tg-fymr">Risk<br>Exposure<br></th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-		<td class="tg-0pky"><span style="font-weight:bold">Production Team</span></td>
-		<td class="tg-0pky">Produce a profitable, competitive AIS.</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-	  </tr>
-	  <tr>
-		<td class="tg-g1fv"><span style="font-weight:bold">Safety Team</span></td>
-		<td class="tg-syad">Produce a safe, ethical AIS.</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x6qq">LOW</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0pky"><span style="font-weight:bold">Product Owners</span></td>
-		<td class="tg-0pky">Fiduciary or contractual duty, competitive advantage.</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x5oc">HIGH</td>
-		<td class="tg-x5oc">HIGH</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0pky"><span style="font-weight:bold">Direct Consumers</span></td>
-		<td class="tg-0pky">Improvement of material conditions.</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x5oc">HIGH</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0pky"><span style="font-weight:bold">Wider Public</span></td>
-		<td class="tg-0pky">Continuing existance.</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x6qq">LOW</td>
-		<td class="tg-x5oc">HIGH</td>
-	  </tr>
-	</tbody>
-</table>
+|                  | Goal                                                  | Technical Control | Operational Control | Goal Control | Legal Control | Risk Exposure |
+|------------------|-------------------------------------------------------|-------------------|---------------------|--------------|---------------|---------------|
+| Production Team  | Produce a profitable, competitive ASI.                | HIGH 🔴            | HIGH 🔴              | LOW 🟢        | LOW 🟢         | LOW 🟢         |
+| Safety Team      | Produce a safe, ethical ASI.                          | HIGH 🔴            | HIGH 🔴              | LOW 🟢        | HIGH 🔴        | LOW 🟢         |
+| Product Owners   | Fiduciary or contractual duty, competitive advantage. | LOW 🟢             | LOW 🟢               | HIGH 🔴       | HIGH 🔴        | HIGH 🔴        |
+| Direct Consumers | Improvement of material conditions.                   | LOW 🟢             | LOW 🟢               | LOW 🟢        |               | HIGH 🔴        |
+| Wider Public     | Continuing existance.                                 | LOW 🟢             | LOW 🟢               | LOW 🟢        | LOW 🟢         | HIGH 🔴        |
 
 In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. The Safety Team row is highlighted in order to demonstrate its necessity in this equation, and how it fulfils a role distinct from others.
 
