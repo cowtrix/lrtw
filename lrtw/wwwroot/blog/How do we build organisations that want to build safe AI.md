@@ -16,13 +16,7 @@ Who are the groups that have a stake in the safety of developing AIS?
 
 These groups are not necessarily separated, but rather represent a categorisation based on differences in goals and differences in power. Obviously, everyone falls into the last category regardless of involvement. Some people on the Production or Safety teams may have direct equity in the product they are developing, and therefore also fall within the category of Product Owners. There are many complex interactions between each group, with each exhibiting different goals and relationships to power.
 
-|                  | Goal                                                  | Technical Control | Operational Control | Goal Control | Legal Control | Risk Exposure |
-|------------------|-------------------------------------------------------|-------------------|---------------------|--------------|---------------|---------------|
-| Production Team  | Produce a profitable, competitive ASI.                | HIGH 🔴            | HIGH 🔴              | LOW 🟢        | LOW 🟢         | LOW 🟢         |
-| Safety Team      | Produce a safe, ethical ASI.                          | HIGH 🔴            | HIGH 🔴              | LOW 🟢        | HIGH 🔴        | LOW 🟢         |
-| Product Owners   | Fiduciary or contractual duty, competitive advantage. | LOW 🟢             | LOW 🟢               | HIGH 🔴       | HIGH 🔴        | HIGH 🔴        |
-| Direct Consumers | Improvement of material conditions.                   | LOW 🟢             | LOW 🟢               | LOW 🟢        |               | HIGH 🔴        |
-| Wider Public     | Continuing existance.                                 | LOW 🟢             | LOW 🟢               | LOW 🟢        | LOW 🟢         | HIGH 🔴        |
+![](img/AISafetyOrganisation_TableStakeholders.PNG)
 
 In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. The Safety Team row is highlighted in order to demonstrate its necessity in this equation, and how it fulfils a role distinct from others.
 

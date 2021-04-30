@@ -1,5 +1,4 @@
 ﻿using Markdig;
-using Markdig.SyntaxHighlighting;
 using System;
 using System.Text.RegularExpressions;
 
@@ -37,7 +36,7 @@ namespace lrtw
 		{
 			var pipeline = new MarkdownPipelineBuilder()
 				.UseAdvancedExtensions()
-				.UseSyntaxHighlighting()
+				.UsePipeTables()
 				.Build();
 			return Markdown.ToHtml(s, pipeline);
 		}
