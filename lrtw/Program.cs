@@ -52,6 +52,8 @@ namespace lrtw
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
 					webBuilder.UseStartup<Startup>();
+					webBuilder.UseUrls("http://localhost:4000", "https://localhost:4001");
+
 				});
 
 		public static string GetRandomThought()
