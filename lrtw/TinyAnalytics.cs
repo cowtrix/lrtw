@@ -35,8 +35,12 @@ namespace lrtw
 		public static void RegisterView(string url)
 		{
 			var d = LoadEntries();
-			var e = d.SingleOrDefault(x => x.URL == url)
-				?? new Entry { URL = url };
+			var e = d.SingleOrDefault(x => x.URL == url);
+			if(e == null)
+			{
+				e = new Entry { URL = url };
+				d.Add(e);
+			}
 			e.ViewCount++;
 			SaveEntries(d);
 		}
