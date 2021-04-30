@@ -1,4 +1,4 @@
-2021-04-01 #writing #ai #question
+2021-05-01 #writing #ai #question
 
 Much has been written about the dangers of artificial intelligence, and how the intelligent systems we build may sometimes unintentionally drift in alignment from their original goals. However, we seem to focus almost entirely upon an Artificial Intelligence System (AIS) drifting from an organisation's values, and little attention is paid to the danger of organisation's values drifting from alignment with the common good. It is our responsibility when judging risk to plan for bad actors, despite any desire to be optimistic about the human condition. We do not yet know if truly malevolent artificial intelligences will come to exist. We can be confident in the existence of such human beings.
 
@@ -30,64 +30,64 @@ These groups are not necessarily separated, but rather represent a categorisatio
 .tg .tg-g1fv{background-color:#333333;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<thead>
-  <tr>
-    <th class="tg-fymr"></th>
-    <th class="tg-0pky"><span style="font-weight:bold">Goal</span><br></th>
-    <th class="tg-fymr">Technical<br>Control</th>
-    <th class="tg-fymr">Operational<br>Control</th>
-    <th class="tg-fymr">Goal<br>Control</th>
-    <th class="tg-fymr">Legal<br>Control</th>
-    <th class="tg-fymr">Risk<br>Exposure<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky"><span style="font-weight:bold">Production Team</span></td>
-    <td class="tg-0pky">Produce a profitable, competitive AIS.</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-  </tr>
-  <tr>
-    <td class="tg-g1fv"><span style="font-weight:bold">Safety Team</span></td>
-    <td class="tg-syad">Produce a safe, ethical AIS.</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x6qq">LOW</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"><span style="font-weight:bold">Product Owners</span></td>
-    <td class="tg-0pky">Fiduciary or contractual duty, competitive advantage.</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x5oc">HIGH</td>
-    <td class="tg-x5oc">HIGH</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"><span style="font-weight:bold">Direct Consumers</span></td>
-    <td class="tg-0pky">Improvement of material conditions.</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x5oc">HIGH</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"><span style="font-weight:bold">Wider Public</span></td>
-    <td class="tg-0pky">Continuing existance.</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x6qq">LOW</td>
-    <td class="tg-x5oc">HIGH</td>
-  </tr>
-</tbody>
+	<thead>
+	  <tr>
+		<th class="tg-fymr"></th>
+		<th class="tg-0pky"><span style="font-weight:bold">Goal</span><br></th>
+		<th class="tg-fymr">Technical<br>Control</th>
+		<th class="tg-fymr">Operational<br>Control</th>
+		<th class="tg-fymr">Goal<br>Control</th>
+		<th class="tg-fymr">Legal<br>Control</th>
+		<th class="tg-fymr">Risk<br>Exposure<br></th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td class="tg-0pky"><span style="font-weight:bold">Production Team</span></td>
+		<td class="tg-0pky">Produce a profitable, competitive AIS.</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+	  </tr>
+	  <tr>
+		<td class="tg-g1fv"><span style="font-weight:bold">Safety Team</span></td>
+		<td class="tg-syad">Produce a safe, ethical AIS.</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x6qq">LOW</td>
+	  </tr>
+	  <tr>
+		<td class="tg-0pky"><span style="font-weight:bold">Product Owners</span></td>
+		<td class="tg-0pky">Fiduciary or contractual duty, competitive advantage.</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x5oc">HIGH</td>
+		<td class="tg-x5oc">HIGH</td>
+	  </tr>
+	  <tr>
+		<td class="tg-0pky"><span style="font-weight:bold">Direct Consumers</span></td>
+		<td class="tg-0pky">Improvement of material conditions.</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x5oc">HIGH</td>
+	  </tr>
+	  <tr>
+		<td class="tg-0pky"><span style="font-weight:bold">Wider Public</span></td>
+		<td class="tg-0pky">Continuing existance.</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x6qq">LOW</td>
+		<td class="tg-x5oc">HIGH</td>
+	  </tr>
+	</tbody>
 </table>
 
 In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. The Safety Team row is highlighted in order to demonstrate its necessity in this equation, and how it fulfils a role distinct from others.
