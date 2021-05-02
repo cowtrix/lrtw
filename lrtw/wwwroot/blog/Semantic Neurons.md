@@ -1,4 +1,4 @@
-20201-04-28 #writing #programming #ai
+2021-04-28 #writing #programming #ai
 
 An idea I've been having a lot of fun playing around with is this idea of little generative algorithms to build mapping functions. When we normally think about a neuron within a deep neural network, we think about this point within a hyperdimensional space. The dimensionality of this space is defined by the number of neurons in the next layer, and the position within that space is defined by the values of those weights and biases.
 
