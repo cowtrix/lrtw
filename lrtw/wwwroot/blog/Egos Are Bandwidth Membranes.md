@@ -1,10 +1,10 @@
 2021-05-10 #writing #philosophy
 
-This piece continues on from [Part 1 - Egos Are Fractally Complex](https://lrtw.net/blog/egosarefractallycomplex)
-
 What do I mean when I say the word "ego"? Previously I've said that I mean an intelligent entity who possesses continuous agency within the world, a stateful sense of self, and preferences for the future. Human beings normatively value this form of intelligence highly, because we are egos ourselves. However, these 3 properties are only measurable through inferring internal state from external actions of the entity. They are subjective experiences of the entity which manifest externally in measurable ways, but with only this definition we lack an understanding of its material structure and physical limitations.
 
 Can we find another, more physical lens through which to examine this sublime object? Undoubtedly. But which one is most interesting? I've been thinking about the lens of informational bandwidth. Can we perceive an ego by the relative bandwidth of information flow within a system, as a *bandwidth membrane* separating an area of high bandwidth from an area of lower bandwidth? What possibilities and limitations does such a lens suggest? Is your ego truly dependant on being enclosed from the outside world through these membranes?
+
+This piece continues on from [Part 1 - Egos Are Fractally Complex](https://lrtw.net/blog/egosarefractallycomplex)
 
 # What Is Information?
 
