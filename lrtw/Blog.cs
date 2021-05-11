@@ -26,7 +26,7 @@ namespace lrtw
 		{
 			public string Link => Content
 				.Trim()
-				.RegexReplace(@"[^\w\s]", "")	// Strip punctuation but preserve whitespace
+				.RegexReplace(@"[^\w\s-]", "")	// Strip punctuation but preserve whitespace
 				.Replace(" ", "-")				// Replace whitespace with dashes
 				.Replace("--", "-")
 				.RegexReplace(@"^\s*\d+.", "")	// Replace numbered list start
