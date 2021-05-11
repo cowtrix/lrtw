@@ -15,7 +15,7 @@ lrtw stands for Legitimate Right To Write
 lrtw stands for Leading Readers To Wrongness
 [Email me](mailto:seandgfinnegan@protonmail.com) recipes for good vegetarian food.
 If you're reading this then something has gone terribly wrong.
-Okay, but why not go and read someone smarter?
+Why not go and read someone smarter?
 Everyone is equal.
 Flow states are pretty cool.
 Be a friend to yourself.
@@ -35,3 +35,4 @@ This is a blank message with no meaning.
 Ce n'est pas un blog.
 ここでは何も、あなたの時間を無駄にして申し訳ありません
 "This is more constructive than social media!", he tried to convince himself.
+Don't take any of this too seriously, I sure don't.
