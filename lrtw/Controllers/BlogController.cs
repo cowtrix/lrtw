@@ -21,7 +21,7 @@ namespace lrtw.Controllers
 			var blog = Program.AllBlogs.SingleOrDefault(b => b.Slug == id);
 			if(blog != null && !HttpContext.Request.Cookies.ContainsKey("anon"))
 			{
-				TinyAnalytics.RegisterView(id);
+				TinyAnalytics.RegisterView(id, Request.HttpContext.Connection.RemoteIpAddress);
 			}
 			return View(blog);
 		}
