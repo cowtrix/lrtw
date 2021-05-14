@@ -1,12 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace lrtw
 {
 	public static class TinyAnalytics
 	{
 		const string ANALYTICS_PATH = "analytics.txt";
+		private static HashSet<string> m_dupeCache = new HashSet<string>();	 // clear this on restart, it don't matter
 
 		class Entry
 		{
@@ -32,8 +35,28 @@ namespace lrtw
 				data.Select(d => $"{d.URL}\t{d.ViewCount}"));
 		}
 
-		public static void RegisterView(string url)
+		public static uint GetViewCount(string url)
 		{
+			var d = LoadEntries();
+			var e = d.SingleOrDefault(x => x.URL == url);
+			if (e == null)
+			{
+				return 0;
+			}
+			return e.ViewCount;
+		}
+
+		
+
+		public static void RegisterView(string url, IPAddress ip)
+		{
+			var hash = StringExtensions.ComputeSha256Hash($"{url}_{ip}");
+			if(m_dupeCache.Contains(hash))
+			{
+				return;
+			}
+			
+			m_dupeCache.Add(hash);
 			var d = LoadEntries();
 			var e = d.SingleOrDefault(x => x.URL == url);
 			if(e == null)
@@ -42,6 +65,7 @@ namespace lrtw
 				d.Add(e);
 			}
 			e.ViewCount++;
+			Console.WriteLine($"View registered | {hash.SafeSubstring(8)} | {e.ViewCount} | {url}");
 			SaveEntries(d);
 		}
 	}
