@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using cloudscribe.Syndication.Models.Rss;
 
 namespace lrtw
 {
@@ -42,8 +44,12 @@ namespace lrtw
 						Duration = 30 * 60
 					});
 			});
-			services.AddScoped<cloudscribe.Syndication.Models.Rss.IChannelProvider, RSSFeedBuilder>();
+			services.AddScoped<IChannelProvider, RSSFeedBuilder>();
 			services.Configure<IISServerOptions>(options =>
+			{
+				options.AllowSynchronousIO = true;
+			});
+			services.Configure<KestrelServerOptions>(options =>
 			{
 				options.AllowSynchronousIO = true;
 			});
