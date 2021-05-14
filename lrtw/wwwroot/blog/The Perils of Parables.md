@@ -1,4 +1,3 @@
-
 2021-05-15 #writing #philosophy
 
 Occasionally, I read LessWrong. I know, I know, it's like the Olympic Games of being a middle-aged and middle-class philosobro smelling your own farts. However, while I'd never describe myself as a rationalist (for reasons that should be obvious if you read more of my writing) it does on occasion hold some interesting essays. People on LessWrong often describe themselves as "rationalists". It's a little tricky to pin the term down beyond "users of LW", though [many have tried](https://www.lesswrong.com/posts/DyG8tzmj3NnGRE8Gt/explaining-the-rationalist-movement-to-the-uninitiated). I won't try to define a community that I don't identify with and that isn't the point of this post. Rather, I'd like to examine what I think is the community's overuse of parable as a deceptively irrational rhetorical tool for explaining epistemic and empirical concepts.
