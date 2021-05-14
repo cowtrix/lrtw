@@ -1,6 +1,7 @@
 ﻿using cloudscribe.Syndication.Models.Rss;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -42,7 +43,7 @@ namespace lrtw
 						Link = new System.Uri($"https://{b.URL}"),
 						Title = b.Title,
 						PublicationDate = b.TimeCreatedUTC,
-						Description = b.Content.StripMarkdown().SafeSubstring(256).Trim() + "... Read More.",
+						Description = StringExtensions.ToHtml(b.Content),
 						Guid = new RssGuid($"https://{b.URL}", true),
 					}).ToList()
 			};
