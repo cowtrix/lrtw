@@ -1,18 +1,13 @@
 2010-11-05 #writing #creative
 
-This is a play I wrote in 2010. I am proud to say it was selected as the best play in the state of NSW and performed professionally in a program called Writers OnStage.
-
-It's about a young man returning from war to a world he doesn't recognise. It's strange to read, all these years later, but some of the jokes still make me laugh.
+> This is a play I wrote in 2010. I am proud to say it was selected as the best play in the state of NSW and performed professionally in a program called Writers OnStage. It's about a young man returning home. It's strange to read, all these years later, but some of the jokes still make me laugh. It's evidently the work of a teenager, and I hope you'll take it as such.
 
 CHARACTERS:
 
-JOHN – A soldier, returning home after serving in the army. Quiet, introspective, he joined the army to escape. He has returned to try and revisit his childhood.
-
-LUCILLE – John’s eccentric mother. She has created her own world, and is overtly hostile to anything that threatens its stability.
-
-ALBERT – John’s father, an office worker and train enthusiast. His and Lucille’s marriage is strained. He retreats into his trains like a turtle retreats into a shell.
-
-ELLY – John’s sister, in the final year of school. An activist with no tangible passion for her causes.
+- **JOHN** – A soldier, returning home after serving in the army. Quiet, introspective, he joined the army to escape. He has returned to try and revisit his childhood.
+- **LUCILLE** – John’s eccentric mother. She has created her own world, and is overtly hostile to anything that threatens its stability.
+- **ALBERT** – John’s father, an office worker and train enthusiast. His and Lucille’s marriage is strained. He retreats into his trains like a turtle retreats into a shell.
+- **ELLY** – John’s sister, in the final year of school. An activist with no tangible passion for her causes.
 
 *NB: This play should be performed in an intimate space.*
 
@@ -27,8 +22,6 @@ The play opens on a small apartment. Two doors stage-left lead to the kitchen an
 **JOHN**: Mum, I didn’t say I was coming back, I said I might-
 
 **LUCILLE**: Nonsense! Absolute nonsense! You can stay for as long as you like, John, absolutely no limits! This is your home, and it’s great to be back - isn’t it?
-
- 
 
 *(John shakes his head and begins to walk to his room, but is pulled back by Lucille holding his bag.)*
 
@@ -47,8 +40,6 @@ Oh… John, I’m afraid I turned your room into a rumpus parlour!
 **LUCILLE**: *(interrupting)* I've got some cold frankfurters in the fridge. I don't know what you've been eating, but I can barely see you, you're so thin! I'll heat them up.
 
 *(Lucille exits into the kitchen, and John takes a seat on the sofa.)*
-
- 
 
 *(offstage)* Oh yes, you haven't seen the new microwave. It's a Samsung. I always said the Japanese know appliances, even if your father is always “LG” this and “LG” that. I could never own anything LG! I’ll never trust the Koreans. Not after Apocalypse Now!
 
@@ -80,8 +71,6 @@ Oh… John, I’m afraid I turned your room into a rumpus parlour!
 
 **LUCILLE**: *(taking it back)* Well if you didn’t want it, John, you should have said! Well, I’m sure you’ve had some absolutely life changing and affirming experiences in your time in the army, and I’m sure that we’d all like to get to know the new you... *(Lucille suddenly becomes very serious. She takes a slow bite of frankfurter.)* Don’t do that to me again. Do you know how I found out that you’d joined up, John? The police told me! After I filed a missing persons report! It wasn’t right John. It wasn’t good. Do not. Do it. Again. *(John stays silent, not breaking eye contact. After a pause, Lucille suddenly bursts into a cheerful smile, the moment forgotten, and takes another bite.)* Oh, you’re forgiven John! Of course you are! *(She finishes off the frankfurter)* Perhaps just give us a little warning the next time you decide to enlist in the armed forces…
 
- 
-
  *(John gives her an annoyed look, rises, grabs his pack and moves to his bedroom door. He attempts to open it, but finds it is locked. Another train comes out, nearly hitting his foot, with a roll of toilet paper sitting on a car. He jumps to avoid it. Lucille sees the train, and suddenly remembers something.)*
 
 Ah! “Ply”.
@@ -105,8 +94,6 @@ Ah! “Ply”.
 **JOHN**: *(giving up on the cat flap)* Dammit!
 
 **LUCILLE**: I know it's a terrible thing to say, and I do adore Miriam and all, but sometimes I wish... I wish she was a “cat” kind of senior...
-
- 
 
 *(ALBERT enters through the front door after a long day’s work. He does not initially acknowledge or notice John or Lucille. He removes a train conductor hat from his briefcase and heads towards John’s room, but stops when he sees John.)*
 
@@ -133,8 +120,6 @@ Ah! “Ply”.
 **JOHN**: Look, I’m sorry to disappoint you two but I’m not staying.
 
 **LUCILLE**: *(ignoring him)* Albert, I worked my fingers to the bone for that games... Rumpus parlour. Are you really going to throw away all of that work?
-
- 
 
 *(Albert has opened the box and begins showing the contents to John. John is uninterested, but smiles anyway. To Albert’s surprise, the set seems to consist mainly of large power-lines: around 9 inches long, with long, entangled power cords.)*
 
@@ -190,8 +175,6 @@ I... guess I'll throw the set out.
 
 **LUCILLE**: Please stay, John! I’ll get you some more frankfurters!
 
- 
-
 *(Elly enters through the front door and sees John. She does not want to see him. She attempts to sneak past everybody and into her room. Albert, however, spots her.)*
 
 **ALBERT**: Elly!
@@ -201,8 +184,6 @@ I... guess I'll throw the set out.
 **JOHN**: Hey. Long-time, no-see.
 
 **ELLY**: I will not be silenced!
-
- 
 
 *(She exits into her room and slams the door. There is an uncomfortable pause. A train comes from John’s room.)*
 
@@ -226,8 +207,6 @@ I... guess I'll throw the set out.
 
 **ALBERT**: -join the armed forces.
 
- 
-
 *(Elly opens the door, holding a palm-card – in doing so forcing John to jump backwards, knocking the train off the tracks.)*
 
 **ELLY**: *(reading)* As a proud member of the Youth Against War movement, I hereby announce my protest against being forced to share residence with a member of the military, who has engaged and assisted in illegal occupation of numerous foreign countries and the persecution of the population of said countries. I believe, as a free and concerned citizen, that assisting this war criminal in any manner including but not limited to board is tantamount to treason. The form of this protest will be boycott, of both family gatherings and activities involving said member of the military. *(She slams the door in John’s face. Albert wails, and runs over to the derailed train.)*
@@ -241,8 +220,6 @@ I... guess I'll throw the set out.
 **ALBERT**: *(Cradling the train)* Not too much damage… *(To Elly’s door)* Let me in! You’ve gone too far this time!
 
 **ELLY**: *(reluctantly)* You may enter to negotiate terms.
-
- 
 
 *(Albert puts his conductor cap on, braces himself and exits into Elly’s room, still holding the crippled train.)*
 
@@ -260,8 +237,6 @@ I... guess I'll throw the set out.
 
 **LUCILLE**: Oh, I'm sure it will all come flooding back the moment you lay eyes on the little darling.
 
- 
-
 *(Elly's door opens. Elly strides in, followed by a flustered Albert. He considers saying something, decides against it, and kneels down to place the train back on the track.)*
 
 **JOHN**: *(moving towards the door)* I really think I should…
@@ -269,8 +244,6 @@ I... guess I'll throw the set out.
 **ELLY**: *(yelling)* I’m going out!
 
 **LUCILLE**: Oh no you’re not! You are grounded for that last remark to John. Attacking him, unprovoked, just when he arrived home! Just when he was most vulnerable, most exposed, you attack him!
-
- 
 
 *(Albert has fixed the train, and it begins to work its way around the track again. Albert follows it, keeping it safe and shoving Lucille out of the way. Elly reaches into her pocket and pulls out another palmcard.)*
 
@@ -292,8 +265,6 @@ I... guess I'll throw the set out.
 
 **ALBERT**: *(Placing himself in front of the door)* Don’t leave, John, please? You’re just angry... At least stay until you’ve cooled off.
 
- 
-
 *(Blocked unintentionally by Albert, Elly gives a huff of resignation and sits down on the couch armrest, looking longingly at the door. A train comes out of John’s door, with a key riding on a car. Albert sees is, giving a relieved gasp and throwing up his arms.)*
 
 It lives!
@@ -310,8 +281,4 @@ It lives!
 
 *(She exits into her room, slamming the door. John looks at a loss. He goes to the front door again and gives it another try, but it is still locked. He goes to his bedroom door and tries to open it with the key, but it does not open it either. He goes and sits on the couch. He notices the padlock again, and tries the key. It unlocks, and he reluctantly begins to unfold the bed.)*
 
- 
-
 *(Black out. THE END.)*
-
- 

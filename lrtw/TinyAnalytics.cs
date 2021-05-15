@@ -65,7 +65,7 @@ namespace lrtw
 				d.Add(e);
 			}
 			e.ViewCount++;
-			Console.WriteLine($"View registered | {hash.SafeSubstring(8)} | {e.ViewCount} | {url}");
+			Console.WriteLine($"View registered | {DateTime.Now} | {ip} | {e.ViewCount} | {url}");
 			SaveEntries(d);
 		}
 	}

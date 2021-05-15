@@ -1,6 +1,6 @@
 2010-11-05 #writing #creative
 
-I wrote this story in my final year of high school. It's about life-extension, death, and purpose. Jeez, teenage Sean, don't cut yourself with that edge!
+> I wrote this story in my final year of high school. It's about life-extension, death, and purpose.
 
 *We blossom and flourish as leaves on the tree, and wither and perish—but naught changeth thee.*
 

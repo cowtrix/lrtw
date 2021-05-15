@@ -27,7 +27,12 @@
 					<h4 class="pl-3">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(blog.TimeCreatedUTC.Month)</h4>
 				}
 				dt = blog.TimeCreatedUTC;
-				<p class="pl-5"><a href="~/blog/@blog.Slug">@blog.Title</a></p>
+
+				<div class="pl-5 row">
+					<a class="col" href="~/blog/@blog.Slug">@blog.Title</a>
+					<small class="text-muted col-auto fixed-column-lg">@(Math.Max(1, Math.Ceiling(TimeSpan.FromMinutes(blog.WordCount/250).TotalMinutes))) min. read</small>
+					<small class="text-muted col-auto fixed-column-sm"><i class="far fa-eye" title="Views"></i> @TinyAnalytics.GetViewCount(blog.Slug)</small>
+				</div>
 			}
 			if (!anyDrawn)
 			{

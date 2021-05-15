@@ -205,6 +205,15 @@ blockquote {
 }
 
 iframe.toy {
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: auto;
+}
+
+.fixed-column-lg {
+	width: 10em;
+	text-align: right;
+}
+
+.fixed-column-sm {
+	width: 7em;
 }
