@@ -16,6 +16,6 @@ else
 			<small class="text-white-50 col-auto">Last Edited @Model.TimeCreatedUTC.ToShortDateString()</small>
 		}
 
-		@Html.Raw(StringExtensions.ToHtml(Model.Content))
+		@Html.Raw(Extensions.ToHtml(Model.Content))
 	</div>
 }

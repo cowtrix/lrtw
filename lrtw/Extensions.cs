@@ -1,12 +1,15 @@
 ﻿using Markdig;
+using Microsoft.AspNetCore.Http;
 using System;
+using System.Linq;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace lrtw
 {
-	public static class StringExtensions
+	public static class Extensions
 	{
 		public static int CountWords(this string s)
 		{
@@ -82,6 +85,19 @@ namespace lrtw
 				}
 				return builder.ToString();
 			}
+		}
+
+		public static IPAddress GetRemoteIPAddress(this HttpContext context, bool allowForwarded = true)
+		{
+			if (allowForwarded)
+			{
+				string header = (context.Request.Headers["CF-Connecting-IP"].FirstOrDefault() ?? context.Request.Headers["X-Forwarded-For"].FirstOrDefault());
+				if (IPAddress.TryParse(header, out IPAddress ip))
+				{
+					return ip;
+				}
+			}
+			return context.Connection.RemoteIpAddress;
 		}
 	}
 }
