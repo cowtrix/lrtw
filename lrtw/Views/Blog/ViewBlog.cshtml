@@ -2,7 +2,7 @@
 @{
 	ViewData["Title"] = Model?.Title;
 	ViewData["Keywords"] = Model?.Tags;
-	ViewData["Description"] = StringExtensions.SafeSubstring(StringExtensions.StripMarkdown(Model?.Content), 160);
+	ViewData["Description"] = Extensions.SafeSubstring(Extensions.StripMarkdown(Model?.Content), 160);
 }
 
 @if (Model != null)
@@ -21,13 +21,13 @@
 				@foreach (var h in Model.Headers)
 				{
 				<div class="contents-indent-@h.Indent">
-					<a href="#@h.Link">@(h.Indent > 1 ? "┗" : "") @StringExtensions.StripMarkdown(h.Content)</a>
+					<a href="#@h.Link">@(h.Indent > 1 ? "┗" : "") @Extensions.StripMarkdown(h.Content)</a>
 				</div>
 				}
 			</div>
 		}
 		<div class="card-body">
-			@Html.Raw(StringExtensions.ToHtml(Model.Content))
+			@Html.Raw(Extensions.ToHtml(Model.Content))
 		</div>
 		<div class="card-footer text-center row">
 			<a class="col" href="~/">Return Home</a>
