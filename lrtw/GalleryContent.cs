@@ -13,7 +13,7 @@ namespace lrtw
 		public string URL => Uri.EscapeUriString(FilePath
 			.Substring(FilePath.IndexOf(WWWROOT_STRING) + WWWROOT_STRING.Length)
 			.Replace("\\", "/"));
-		public string Content => StringExtensions.ToHtml($"![embed]({URL})");
+		public string Content => Extensions.ToHtml($"![embed]({URL})");
 		public GalleryContent(string filePath)
 		{
 			FilePath = filePath;

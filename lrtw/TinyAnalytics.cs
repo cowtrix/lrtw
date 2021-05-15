@@ -46,11 +46,9 @@ namespace lrtw
 			return e.ViewCount;
 		}
 
-		
-
 		public static void RegisterView(string url, IPAddress ip)
 		{
-			var hash = StringExtensions.ComputeSha256Hash($"{url}_{ip}");
+			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
 			if(m_dupeCache.Contains(hash))
 			{
 				return;

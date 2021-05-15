@@ -30,7 +30,7 @@
 		<div class="card-body">
 			@foreach (var prev in blog.Lines.Skip(1).Take(2))
 			{
-				@Html.Raw(StringExtensions.ToHtml(prev));
+				@Html.Raw(Extensions.ToHtml(prev));
 			}
 		</div>
 		<a href="~/blog/@blog.Slug">

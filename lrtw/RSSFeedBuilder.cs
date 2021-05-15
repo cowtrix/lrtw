@@ -43,7 +43,7 @@ namespace lrtw
 						Link = new System.Uri($"https://{b.URL}"),
 						Title = b.Title,
 						PublicationDate = b.TimeCreatedUTC,
-						Description = StringExtensions.ToHtml(b.Content),
+						Description = Extensions.ToHtml(b.Content),
 						Guid = new RssGuid($"https://{b.URL}", true),
 					}).ToList()
 			};

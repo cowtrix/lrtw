@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="card-body">
-			@Html.Raw(StringExtensions.ToHtml(gallery.Content))
+			@Html.Raw(Extensions.ToHtml(gallery.Content))
 		</div>
 		<a href="~/gallery/@gallery.Slug">
 			<div class="card-footer text-center btn-secondary">
