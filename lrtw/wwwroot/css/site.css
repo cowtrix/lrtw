@@ -217,3 +217,12 @@ iframe.toy {
 .fixed-column-sm {
 	width: 7em;
 }
+
+@media only screen and (max-width: 600px) {
+	.fixed-column-lg {
+		display:none;
+	}
+	.fixed-column-sm {
+		display: none;
+	}
+}

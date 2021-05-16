@@ -36,4 +36,5 @@ Ce n'est pas un blog.
 ここでは何も、あなたの時間を無駄にして申し訳ありません
 "This is more constructive than social media!", he tried to convince himself.
 Don't take any of this too seriously, I sure don't.
-A very specific kind of dumbass.
+I'm a very specific kind of dumbass.
+For dog's sake let me know if any of this makes a lick of sense to you.

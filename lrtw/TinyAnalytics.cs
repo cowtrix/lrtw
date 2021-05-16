@@ -51,6 +51,9 @@ namespace lrtw
 			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
 			if(m_dupeCache.Contains(hash))
 			{
+				Console.ForegroundColor = ConsoleColor.Gray;
+				Console.WriteLine($"Duplicate view\t| {DateTime.Now}\t| {ip}\t| {url}");
+				Console.ResetColor();
 				return;
 			}
 			
@@ -63,7 +66,7 @@ namespace lrtw
 				d.Add(e);
 			}
 			e.ViewCount++;
-			Console.WriteLine($"View registered | {DateTime.Now} | {ip} | {e.ViewCount} | {url}");
+			Console.WriteLine($"View registered\t| {DateTime.Now}\t| {ip}\t| {e.ViewCount}\t| {url}");
 			SaveEntries(d);
 		}
 	}
