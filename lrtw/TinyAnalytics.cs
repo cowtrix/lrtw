@@ -48,19 +48,20 @@ namespace lrtw
 
 		public static void RegisterView(string url, IPAddress ip)
 		{
+			var d = LoadEntries();
+			var e = d.SingleOrDefault(x => x.URL == url);
+			
 			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
 			if(m_dupeCache.Contains(hash))
 			{
 				Console.ForegroundColor = ConsoleColor.Gray;
-				Console.WriteLine($"Duplicate view\t| {DateTime.Now}\t| {ip}\t| {url}");
+				Console.WriteLine($"Duplicate view\t| {DateTime.Now}\t| {ip}\t| {(e != null ? e.ViewCount : 0u)}\t| {url}");
 				Console.ResetColor();
 				return;
 			}
 			
 			m_dupeCache.Add(hash);
-			var d = LoadEntries();
-			var e = d.SingleOrDefault(x => x.URL == url);
-			if(e == null)
+			if (e == null)
 			{
 				e = new Entry { URL = url };
 				d.Add(e);
