@@ -1,4 +1,4 @@
-14-04-2021 #writing #ai #technology
+2021-04-14 #writing #ai #technology
 
 In 1960, [Norbert Wiener](https://en.wikipedia.org/wiki/Norbert_Wiener) - widely considered the originator of the concept of cybernetics - published a short essay entitled ["Some Moral and Technical Consequences of Automation"](https://nissenbaum.tech.cornell.edu/papers/Wiener.pdf). [Here's](https://www.thenewatlantis.com/publications/welcoming-our-new-robot-overlords) the article that got me there, which is mostly about social media and an abstracted reapplication of these concepts, but they tie in the article a bit.
 
