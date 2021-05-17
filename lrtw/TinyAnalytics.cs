@@ -9,7 +9,9 @@ namespace lrtw
 	public static class TinyAnalytics
 	{
 		const string ANALYTICS_PATH = "analytics.txt";
-		private static HashSet<string> m_dupeCache = new HashSet<string>();	 // clear this on restart, it don't matter
+		const string ROBOTS_PATH = "robots_ip.txt";
+		private static HashSet<string> BotList => File.Exists(ROBOTS_PATH) ? File.ReadAllLines(ROBOTS_PATH).ToHashSet() : null;
+		private static HashSet<string> m_dupeCache = new HashSet<string>();  // clear this on restart, it don't matter
 
 		class Entry
 		{
@@ -48,18 +50,31 @@ namespace lrtw
 
 		public static void RegisterView(string url, IPAddress ip)
 		{
+			const int dtLength = -10;
+			const int ipLength = -16;
+			const int viewLength = -5;
+
 			var d = LoadEntries();
 			var e = d.SingleOrDefault(x => x.URL == url);
-			
-			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
-			if(m_dupeCache.Contains(hash))
+
+			var bl = BotList;
+			if (bl != null && bl.Contains(ip.ToString()))
 			{
-				Console.ForegroundColor = ConsoleColor.Gray;
-				Console.WriteLine($"Duplicate view\t| {DateTime.Now}\t| {ip}\t| {(e != null ? e.ViewCount : 0u)}\t| {url}");
+				Console.ForegroundColor = ConsoleColor.DarkGray;
+				Console.WriteLine($"Bot view\t\t| {DateTime.Now,dtLength} | {ip,ipLength} | {(e != null ? e.ViewCount : 0u),viewLength} | {url}");
 				Console.ResetColor();
 				return;
 			}
-			
+
+			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
+			if (m_dupeCache.Contains(hash))
+			{
+				Console.ForegroundColor = ConsoleColor.Gray;
+				Console.WriteLine($"Duplicate view\t| {DateTime.Now,dtLength} | {ip,ipLength} | {(e != null ? e.ViewCount : 0u),viewLength} | {url}");
+				Console.ResetColor();
+				return;
+			}
+
 			m_dupeCache.Add(hash);
 			if (e == null)
 			{
@@ -67,7 +82,7 @@ namespace lrtw
 				d.Add(e);
 			}
 			e.ViewCount++;
-			Console.WriteLine($"View registered\t| {DateTime.Now}\t| {ip}\t| {e.ViewCount}\t| {url}");
+			Console.WriteLine($"View registered\t| {DateTime.Now,dtLength} | {ip,ipLength} | {e.ViewCount,viewLength} | {url}");
 			SaveEntries(d);
 		}
 	}

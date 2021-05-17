@@ -30,6 +30,9 @@
     <None Update="Pages\About.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="robots_ip.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Thoughts.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
