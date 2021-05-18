@@ -61,7 +61,7 @@ namespace lrtw
 			if (bl != null && bl.Contains(ip.ToString()))
 			{
 				Console.ForegroundColor = ConsoleColor.DarkGray;
-				Console.WriteLine($"Bot view\t\t| {DateTime.Now,dtLength} | {ip,ipLength} | {(e != null ? e.ViewCount : 0u),viewLength} | {url}");
+				Console.WriteLine($"Bot view\t| {DateTime.Now,dtLength} | {ip,ipLength} | {(e != null ? e.ViewCount : 0u),viewLength} | {url}");
 				Console.ResetColor();
 				return;
 			}
@@ -69,7 +69,7 @@ namespace lrtw
 			var hash = Extensions.ComputeSha256Hash($"{url}_{ip}");
 			if (m_dupeCache.Contains(hash))
 			{
-				Console.ForegroundColor = ConsoleColor.Gray;
+				Console.ForegroundColor = ConsoleColor.DarkGray;
 				Console.WriteLine($"Duplicate view\t| {DateTime.Now,dtLength} | {ip,ipLength} | {(e != null ? e.ViewCount : 0u),viewLength} | {url}");
 				Console.ResetColor();
 				return;
