@@ -12,6 +12,7 @@ namespace lrtw
 		const string ROBOTS_PATH = "robots_ip.txt";
 		private static HashSet<string> BotList => File.Exists(ROBOTS_PATH) ? File.ReadAllLines(ROBOTS_PATH).ToHashSet() : null;
 		private static HashSet<string> m_dupeCache = new HashSet<string>();  // clear this on restart, it don't matter
+		private static object m_fileLock = new object();
 
 		class Entry
 		{
@@ -25,16 +26,23 @@ namespace lrtw
 			{
 				return new List<Entry>();
 			}
-			return File.ReadAllLines(ANALYTICS_PATH)
-				.Select(s => s.Split('\t'))
-				.Select(x => new Entry { URL = x[0], ViewCount = uint.Parse(x[1]) })
-				.ToList();
+			
+			lock (m_fileLock)
+			{
+				return File.ReadAllLines(ANALYTICS_PATH)
+					.Select(s => s.Split('\t'))
+					.Select(x => new Entry { URL = x[0], ViewCount = uint.Parse(x[1]) })
+					.ToList();
+			}
 		}
 
 		static void SaveEntries(List<Entry> data)
 		{
-			File.WriteAllLines(ANALYTICS_PATH,
-				data.Select(d => $"{d.URL}\t{d.ViewCount}"));
+			lock(m_fileLock)
+			{
+				File.WriteAllLines(ANALYTICS_PATH,
+					data.Select(d => $"{d.URL}\t{d.ViewCount}"));
+			}
 		}
 
 		public static uint GetViewCount(string url)
