@@ -6,7 +6,7 @@ The best way to demonstrate this tool is through showing its use. Unfortunately,
 
 ![Bonsai!](img/voxul/bonsai.PNG)
 
-![Bonsai WIP](img/voxul/bonsai.mp4)
+<video controls><source src="img/voxul/bonsai.mp4" type="video/webm">Sorry, your browser doesn't support webm.</video>
 
 # Where can I get it?
 
