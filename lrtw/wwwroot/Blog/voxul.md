@@ -6,7 +6,7 @@ The best way to demonstrate this tool is through showing its use. Unfortunately,
 
 ![Bonsai!](img/voxul/bonsai.PNG)
 
-![Bonsai WIP](img/voxul/bonsai.PNG)
+![Bonsai WIP](img/voxul/bonsai.mp4)
 
 # Where can I get it?
 
@@ -43,7 +43,11 @@ Either clone the Github repository above into your `/Assets/` folder of your Uni
 
 # Gallery
 
-![Destroyable voxels!](img/voxul/wurmfight_01.webm)
+<video controls>
+    <source src="img/voxul/wurmfight_01.webm"
+            type="video/webm">
+    Sorry, your browser doesn't support webm.
+</video>
 
 *A destroyable voxel prototype I made.*
 
