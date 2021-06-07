@@ -79,9 +79,6 @@ body {
 }
 
 .blog-img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	max-height: 100%;
 	max-width: 100%;
 }
@@ -92,7 +89,10 @@ body {
 }
 
 .blog-img-container-sm {
-	max-height: 128px;
+	display: flex;
+	max-height: 200px;
+	justify-content: center;
+	align-items: center;
 }
 
 hr {
