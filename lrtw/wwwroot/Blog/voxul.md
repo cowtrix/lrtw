@@ -6,7 +6,7 @@ The best way to demonstrate this tool is through showing its use. Unfortunately,
 
 ![Bonsai!](img/voxul/bonsai.PNG)
 
-<video controls><source src="img/voxul/bonsai.mp4" type="video/webm">Sorry, your browser doesn't support webm.</video>
+<video controls><source src="img/voxul/bonsai.mp4" type="video/mp4">Sorry, your browser doesn't support mp4.</video>
 
 # Where can I get it?
 
@@ -43,11 +43,8 @@ Either clone the Github repository above into your `/Assets/` folder of your Uni
 
 # Gallery
 
-<video controls>
-    <source src="img/voxul/wurmfight_01.webm"
-            type="video/webm">
-    Sorry, your browser doesn't support webm.
-</video>
+<video controls><source src="img/voxul/wurmfight_01.webm" type="video/webm">Sorry, your browser doesn't support webm.</video>
+
 
 *A destroyable voxel prototype I made.*
 

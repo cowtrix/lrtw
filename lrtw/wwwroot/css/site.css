@@ -115,6 +115,10 @@ iframe {
 	max-width: 100% !important;
 }
 
+video {
+	width: 100%;
+}
+
 @media (min-width: 992px) {
 	.container {
 		max-width: 860px;
@@ -220,8 +224,9 @@ iframe.toy {
 
 @media only screen and (max-width: 600px) {
 	.fixed-column-lg {
-		display:none;
+		display: none;
 	}
+
 	.fixed-column-sm {
 		display: none;
 	}
