@@ -49,7 +49,7 @@ Either clone the Github repository above into your `/Assets/` folder of your Uni
 
 ![](img/voxul/Room.PNG)
 
-![](img/voxul/vox.mp4)
+<video controls><source src="img/voxul/vox.mp4" type="video/mp4">Sorry, your browser doesn't support mp4.</video>
 
 ![](img/voxul/potionShop.PNG)
 
