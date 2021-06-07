@@ -25,7 +25,7 @@ Either clone the Github repository above into your `/Assets/` folder of your Uni
 
 - Advanced voxel mesh editor: add, remove, subdivide, select, copy/paste, mirror
 
-![select delete](img/voxul/select_delete.gif.gif)
+![select delete](img/voxul/select_delete.gif)
 
 - Supports transparency and emission
 - Subdivision and resolution layering system that lets you mix and match different voxel grid resolutions.
@@ -44,7 +44,6 @@ Either clone the Github repository above into your `/Assets/` folder of your Uni
 # Gallery
 
 <video controls><source src="img/voxul/wurmfight_01.webm" type="video/webm">Sorry, your browser doesn't support webm.</video>
-
 
 *A destroyable voxel prototype I made.*
 
