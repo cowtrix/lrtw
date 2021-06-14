@@ -31,7 +31,6 @@
 				<div class="pl-5 row">
 					<a class="col" href="~/blog/@blog.Slug">@blog.Title</a>
 					<small class="text-muted col-auto fixed-column-lg">@(Math.Max(1, Math.Ceiling(TimeSpan.FromMinutes(blog.WordCount/250).TotalMinutes))) min. read</small>
-					<small class="text-muted col-auto fixed-column-sm"><i class="far fa-eye" title="Views"></i> @TinyAnalytics.GetViewCount(blog.Slug)</small>
 				</div>
 			}
 			if (!anyDrawn)
