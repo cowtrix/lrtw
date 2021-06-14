@@ -40,3 +40,4 @@ I'm a very specific kind of dumbass.
 For dog's sake let me know if any of this makes a lick of sense to you.
 Not trying to be correct, just trying to be wrong in interesting ways.
 Parochial rants from a perennial raconteur.
+Just an unhoopy frood trying to figure out where his towel is.
