@@ -1,0 +1,13 @@
+2021-06-17 #writing #satire
+
+Citizens of immensely rich nation-states with historically stable and trustworthy public institutions expressed frustration and anger today at the rapid growth and growing impact of cryptocurrency.
+
+"I just don't understand it all," said Melbourne resident Mary S. "I can go to my bank any time and deposit or withdraw good old-fashioned hard cash, as can literally every other person on the planet. And if you don't have trustworthy institutions around you, you should just wait for your government to make them for you. It's called pulling yourself up by your bootstraps, people!" Mary produced a $20 bill to demonstrate. "*This* is money you dumb-dumbs. If you don't have any, just remortgage one of your houses with a bank!"
+
+London resident Toby M, interviewed while loading a kilo of Chiquita bananas into his second car, expressed concern over the environmental impact. 
+
+"Look, I'm all for not exterminating the global poor, but we just can't spare the resources right now to set up a global financial network. Cryptocurrency is destroying the environment by forcing oil and coal corporations to keep doing exactly what they were doing before 2008. I'm pretty sure if we abolished cryptocurrency, the climate crisis would be completely solved. If those people we colonized really want to connect to the global economy, they've got to play by the same rules as everyone else, which we also wrote. Oh, thank God it's my wife with the 3rd car! These avocados were so cheap I had to buy a whole box!"
+
+Texas resident Harry J expressed concern over the affect a global and open economic system could have over the southern border. "Well kind of the point of it all is to keep the money and wealth flowing in, and keep the nasty people out. If we don't don't control that economic border, then things could start flowing the wrong way! And if there's no economic membrane at all between two nations, then what's even the point of having a nation-state? Nothing scares me more than the thought of my poor, endangered, sexy nation-state being replaced by dirty, dirty global solidarity."
+
+Concerned citizens of countries which undeniably won the brutal competition of global capitalism and entangled developing nations within an exploitative web of oppressive economic power will surely continue to be confused why anyone would want to try anything different. Despite our efforts, we were strangely unable to find any Greeks, Peruvians, Zimbabweans or Turks to comment.
