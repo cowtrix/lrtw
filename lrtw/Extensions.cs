@@ -53,7 +53,8 @@ namespace lrtw
 				.Replace("#", "-")
 				.Replace("?", "")
 				.Replace("'", ""))
-				.Replace("--", "-");
+				.Replace("--", "-")
+				.SafeSubstring(64);
 		}
 
 		public static string SafeSubstring(this string s, int length)
