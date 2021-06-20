@@ -16,7 +16,7 @@ Who are the groups that have a stake in the safety of developing AIS?
 
 These groups are not necessarily separated, but rather represent a categorisation based on differences in goals and differences in power. Obviously, everyone falls into the last category regardless of involvement. Some people on the Production or Safety teams may have direct equity in the product they are developing, and therefore also fall within the category of Product Owners. There are many complex interactions between each group, with each exhibiting different goals and relationships to power.
 
-![](img/AISafetyOrganisation_TableStakeholders.PNG)
+![A table showing the different stakeholders and their power/risk.](img/AISafetyOrganisation_TableStakeholders.PNG)
 
 In this table, we can see the different levels of control and exposure to risk that each group of stakeholders has. Note how the Safety Team fulfils a role distinct from others.
 
