@@ -28,10 +28,13 @@
 				}
 				dt = blog.TimeCreatedUTC;
 
-				<div class="pl-5 row">
-					<a class="col" href="~/blog/@blog.Slug">@blog.Title</a>
-					<small class="text-muted col-auto fixed-column-lg">@(Math.Max(1, Math.Ceiling(TimeSpan.FromMinutes(blog.WordCount/250).TotalMinutes))) min. read</small>
-				</div>
+				<a href="~/blog/@blog.Slug">
+					<div class="pl-5 row">
+						<p class="col h-100" >- @blog.Title</p>						
+						<small class="text-muted col-auto fixed-column-lg h-100">@(Math.Max(1, Math.Ceiling(TimeSpan.FromMinutes(blog.WordCount/250).TotalMinutes))) min. read</small>
+					</div>
+				</a>
+				<hr style="margin:0;height:.5em;margin-top:.5em;" />
 			}
 			if (!anyDrawn)
 			{
