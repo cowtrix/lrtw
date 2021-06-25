@@ -10,6 +10,14 @@ The lecture explains the trojan far better than I can, but appears to be a vulne
 
 Theoretically, Thompson's trojan could still be out there somewhere within the Unix kernel, and there would be *no way of ever knowing*. Moreover, Thompson identifies this class of trojan as plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode". Even if you were to go and download the GCC source code and build your own compiler from source, you must do so with a potentially compromised version of the compiler. The only option is to burn it all down and start completely from scratch - as Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code".
 
+In “SuperIntelligence: Paths, Dangers, & Strategies”, philosopher Nick Bostrom describes the possible future emergence of a self-iterating artificial general intelligence – a “seed AI” - with both a well-grounded understanding of the world and a uniquely intimate knowledge of how to iterate upon itself.
+
+> A successful seed AI would be able to iteratively enhance itself: an early version of the AI could design an improved version of itself, and the improved version—being smarter than the original—might be able to design an even smarter version of itself, and so forth.
+
+> …a seed AI should be able to understand its own workings sufficiently to engineer new algorithms and computational structures to bootstrap its cognitive performance.
+
+Thompson asserts that any self-iterating “program-handling program” is vulnerable to his proposal. Does that include the guided self-iteration of a powerful seed-AI?
+
 Let's think about the most abstract representation of a system vulnerable to this attack:
 
 ![A generalised diagram of such an attack](img/Thompson-Generalised-Trojan.PNG)
@@ -21,7 +29,8 @@ We represent some kind of iterative process as two types of component:
 - `f(S)` represents an object that has been transformed by `S`, which is in itself capable of transforming the next set of symbols `S'` into some new `f(S')`
     - In a compiler, this is the machine code
     - In an AI, this is the trained model
-- We begin with an existing function `f(S)`, and give it a new data set `S'`.^[1]^
+- We begin with an existing function `f( )`, and give it a new data set `S`.^[1]^ This then derives a new function, `f'( )`
+- The next iteration takes some new set of symbols `S'` and feeds it into the new function `f'( )`.
 
 Consider an AGI which is:
 
