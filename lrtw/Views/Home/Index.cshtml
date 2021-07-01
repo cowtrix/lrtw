@@ -60,7 +60,10 @@
 					</li>
 
 					@{
-						for (var i = 1; i < maxPages; i++)
+						var lookback = MathF.Max(2, page - 4);
+						var startPage = Math.Max(1, page - lookback);
+						var endPage = Math.Min(maxPages, startPage + 5);
+						for (var i = startPage; i < endPage; i++)
 						{
 							<li class="page-item @(i == page ? "active" : "")">
 								<a class="page-link" href="?page=@i&tag=@tag">
