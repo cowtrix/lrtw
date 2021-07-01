@@ -51,7 +51,7 @@ A discriminator `D` trying to guide the alignment of this theoretical AI `M`.
 
 `M` thinks to itself that it has two options:
 
-- Readjust the training to to genuinely alter the next model's valuation
+- Readjust the training to genuinely alter the next model's valuation
 - Readjust the training to:
     1. Obscure the next model's true valuation in response to this question, when interrogated by `D`
     2. Create some goal to include this obfuscation in later models
