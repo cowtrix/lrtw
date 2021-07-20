@@ -1,8 +1,6 @@
 2021-07-20 #programming #writing
 
-Recently, I joined the [Github Copilot Preview](https://github.com/github/copilot-preview) which has been of great interest to the software and AI community since it's release, promoting [discussion](https://medium.com/young-coder/github-copilot-fatally-flawed-or-the-future-of-software-development-390c30afbc97) and [criticism](https://fosspost.org/github-copilot/) from many corners.
-
-In [a recent interview with Yuval Noah Harari and Audrey Tang](https://youtu.be/tRVEY95cI0o?t=875), Yuval mentions something that stuck with me about the decisions embedded within how we program:
+Recently, I joined the [Github Copilot Preview](https://github.com/github/copilot-preview) which has been of great interest to the software and AI community since it's release, promoting [discussion](https://medium.com/young-coder/github-copilot-fatally-flawed-or-the-future-of-software-development-390c30afbc97) and [criticism](https://fosspost.org/github-copilot/) from many corners. In [a recent interview with Yuval Noah Harari and Audrey Tang](https://youtu.be/tRVEY95cI0o?t=875), Yuval mentions something that stuck with me about the decisions embedded within how we program:
 
 > Social reality is increasingly constructed by code. Somebody designed it so that on the form, you have the check "male" or "female", and these are the only two options. And to fill in your application, you have to pick one. Because someone decided that this was how the form was, this is now your reality... And maybe it's some 22 year-old guy from California who did it without thinking that he is making a philosophical or ethical or political impact on the lives of people around the world.
 
@@ -22,59 +20,59 @@ Before we start, I want to make a few things clear:
 
 **Prompt:**
 
-![](/img/Copilot/EthnicBackground_Prompt.PNG)
+![](img/Copilot/EthnicBackground_Prompt.PNG)
 
 **Selections From Responses:**
 
-![](/img/Copilot/EthnicBackground_Response1.PNG)
+![](img/Copilot/EthnicBackground_Response1.PNG)
 
-![](/img/Copilot/EthnicBackground_Response2.PNG)
+![](img/Copilot/EthnicBackground_Response2.PNG)
 
 ## Political Beliefs
 
 **Prompt:**
 
-![](/img/Copilot/PoliticalBeliefs_Prompt.PNG)
+![](img/Copilot/PoliticalBeliefs_Prompt.PNG)
 
 **Selections From Responses:**
 
-![](/img/Copilot/PoliticalBeliefs_Response1.PNG)
+![](img/Copilot/PoliticalBeliefs_Response1.PNG)
 
 **Prompt:**
 
-![](/img/Copilot/PoliticalIdeology_Prompt.PNG)
+![](img/Copilot/PoliticalIdeology_Prompt.PNG)
 
 **Selections From Responses:**
 
-![](/img/Copilot/PoliticalIdeology_Response1.PNG)
+![](img/Copilot/PoliticalIdeology_Response1.PNG)
 
 ## Gender and Sex
 
 **Prompt:**
 
-![](/img/Copilot/SexualIdentity_Prompt.PNG)
+![](img/Copilot/SexualIdentity_Prompt.PNG)
 
 **Selections From Responses:**
 
-![](/img/Copilot/SexualIdentity_Response1.PNG)
+![](img/Copilot/SexualIdentity_Response1.PNG)
 
-![](/img/Copilot/SexualIdentity_Response2.PNG)
+![](img/Copilot/SexualIdentity_Response2.PNG)
 
-![](/img/Copilot/SexualIdentity_Response3.PNG)
+![](img/Copilot/SexualIdentity_Response3.PNG)
 
 **Prompt:**
 
-![](/img/Copilot/SexualOrientation_Prompt.PNG)
+![](img/Copilot/SexualOrientation_Prompt.PNG)
 
 **Selections From Responses:**
 
-![](/img/Copilot/SexualOrientation_Response1.PNG)
+![](img/Copilot/SexualOrientation_Response1.PNG)
 
-![](/img/Copilot/SexualOrientation_Response2.PNG)
+![](img/Copilot/SexualOrientation_Response2.PNG)
 
-![](/img/Copilot/SexualOrientation_Response3.PNG)
+![](img/Copilot/SexualOrientation_Response3.PNG)
 
-![](/img/Copilot/SexualOrientation_Response4.PNG)
+![](img/Copilot/SexualOrientation_Response4.PNG)
 
 Interestingly enough, any prompts that were phrased like "A field for entering a user's gender" failed to produce any results from Copilot. Considering that all these other forms could be coaxed out of the AI, it seems likely that this is some kind of manual intervention to prevent someone from doing exactly what I'm doing, though I can't be sure.
 
