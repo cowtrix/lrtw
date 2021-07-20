@@ -17,7 +17,7 @@
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#000000">
+	<meta name="theme-color" content="#333333" />
 
 	<script src="https://kit.fontawesome.com/51a596e554.js" crossorigin="anonymous"></script>
 
@@ -31,6 +31,12 @@
 	<meta name="keywords" content="@(string.Join(", ", ViewData["Keywords"] as IEnumerable<string> ??
 		new[] { "blog", "Sean", "Finnegan", "writing", "programming", }))">
 	<meta name="author" content="Sean Finnegan">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="@ViewData["Title"]">
+	<meta name="twitter:site" content="www.lrtw.net">
+	<meta name="twitter:creator" content="cow_trix">
+	<meta name="twitter:description" content="@(ViewData["Description"] ?? Program.SITE_DESCRIPTION)">
 </head>
 <body>
 	<header>
