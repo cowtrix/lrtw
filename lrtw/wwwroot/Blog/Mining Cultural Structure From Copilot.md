@@ -6,7 +6,7 @@ Recently, I joined the [Github Copilot Preview](https://github.com/github/copilo
 
 We embed a lot of cultural structure within the programs we create. These programs are, after all, usually built to solve some problem within our society. How we build code that classifies people is one of the clearest examples of this. Any time we build software which implements these social concepts, we are inevitably making some political decisions about the world.
 
-I wondered if I could extract any cultural structure from Github Copilot - what does this AI know about race, gender, sex, and politics? What decisions about the world does it enforce?
+I wondered if I could extract any cultural structure from Github Copilot - what does this AI know about race, gender, sex, and politics? What decisions about the world does it suggest?
 
 Before we start, I want to make a few things clear:
 - I won't be critiquing the outputs that Github Copilot provides us for correctness, though there are [useful guides](https://uxdesign.cc/designing-forms-for-gender-diversity-and-inclusion-d8194cf1f51) out there for implementing good forms around identity. Rather, I'm just hunting around for any kind of cultural structure I can find.
