@@ -1,4 +1,4 @@
-#2021-06-14 #programming #gamedev
+2021-06-14 #programming #gamedev
 
 This weekend, I did the [GMTK Game Jame.](https://gmtkgamejam.com/) It's a 48 hour event where people make games matching a theme. This year's theme was "Joined Together". I made a game called ["Cold Weld"](https://en.wikipedia.org/wiki/Cold_welding). I used the little Unity tool I've been tinkering with that I just wrote a post about, [voxul](https://lrtw.net/blog/voxul).
 
