@@ -30,11 +30,11 @@ namespace lrtw
 		{
 			services.AddControllersWithViews();
 			services.AddResponseCompression();
-			services.AddHttpsRedirection(options =>
+			/*services.AddHttpsRedirection(options =>
 			{
 				options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
 				options.HttpsPort = 443;
-			});
+			});*/
 			services.AddHttpContextAccessor();
 			services.AddMvc(options =>
 			{
@@ -68,7 +68,7 @@ namespace lrtw
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
-			app.UseHttpsRedirection();
+			//app.UseHttpsRedirection();
 			app.UseStaticFiles();
 
 			app.UseRouting();
